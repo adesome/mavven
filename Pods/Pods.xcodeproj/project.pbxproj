@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		069E9B3380BB448DFC5018C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DD5D1BAA1FC6029A7D7334 /* Foundation.framework */; };
+		125693B64D25D625C98532D0 /* MSDynamicsDrawerStyler.m in Sources */ = {isa = PBXBuildFile; fileRef = 72EF8E3427E37C100969046B /* MSDynamicsDrawerStyler.m */; };
+		1C1389822C15F072ED167BFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DD5D1BAA1FC6029A7D7334 /* Foundation.framework */; };
+		268BE85FC273CD1286EE0433 /* Pods-maven-MSDynamicsDrawerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAA512DC26DEFD78C072A32 /* Pods-maven-MSDynamicsDrawerViewController-dummy.m */; };
+		28269A6176BE9FFDB63F3B2D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9003B86E738A0C126201BF2F /* QuartzCore.framework */; };
+		2F62210FB9BEC65B1B00BDD0 /* Pods-maven-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 350949E942C3421BF2915A5E /* Pods-maven-dummy.m */; };
+		3792B6E84EEBCF753924D6C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DD5D1BAA1FC6029A7D7334 /* Foundation.framework */; };
+		53D700A1BE636FE9575EBE10 /* QBFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F33906339EE68694C510997 /* QBFlatButton.m */; };
+		5D06EC02A4E3928E3293D4CF /* MSDynamicsDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A97E421131204042AFA0D0D5 /* MSDynamicsDrawerViewController.m */; };
+		686A45179BB867A6E8C61647 /* Pods-maven-QBFlatButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F360D6EE079C1746E792A6 /* Pods-maven-QBFlatButton-dummy.m */; };
+		99413A417818E6602A44CC4F /* RKCardView.h in Headers */ = {isa = PBXBuildFile; fileRef = 285BDCF1CE610FE896C0A926 /* RKCardView.h */; };
+		9E9D56E6034235B41F7E840B /* MSDynamicsDrawerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D312EC366CD5FEA2D2EC5875 /* MSDynamicsDrawerViewController.h */; };
+		BC423D836E3647608AF8FC36 /* RKCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = C89DFB925A32F3506F9BF180 /* RKCardView.m */; };
+		BD7F84403B2FA99663E83595 /* QBFlatButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB8A2C91F593D540387E828 /* QBFlatButton.h */; };
+		DCE50813C65810522C977A0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DD5D1BAA1FC6029A7D7334 /* Foundation.framework */; };
+		E2E0FBFB50334C8E82DF9C62 /* MSDynamicsDrawerStyler.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC2E395DE9FFEAA3B71DA60 /* MSDynamicsDrawerStyler.h */; };
+		E977CB5D59FA2005547D6C04 /* Pods-maven-RKCardView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF31D76DA3757095B610F96 /* Pods-maven-RKCardView-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		833A1F91FECE6D6364FF1EBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24192B70287AE526B7374107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC98D53189024D9D4B4225A7;
+			remoteInfo = "Pods-maven-MSDynamicsDrawerViewController";
+		};
+		A3E7B8392EF55D208B1EA17F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24192B70287AE526B7374107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D4F8FFA18994F9D632C1915;
+			remoteInfo = "Pods-maven-RKCardView";
+		};
+		A9AE7C360311E071854824C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24192B70287AE526B7374107 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA61EDBB01021E5D0FFE0E0F;
+			remoteInfo = "Pods-maven-QBFlatButton";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BC5BF568F01086485EF332D /* libPods-maven-MSDynamicsDrawerViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-maven-MSDynamicsDrawerViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		101AAC6AFC18C63B056FF2DB /* Pods-maven-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-maven-resources.sh"; sourceTree = "<group>"; };
+		17F360D6EE079C1746E792A6 /* Pods-maven-QBFlatButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-maven-QBFlatButton-dummy.m"; sourceTree = "<group>"; };
+		1E52D21A5283F8F9688C5EA4 /* Pods-maven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-maven.release.xcconfig"; sourceTree = "<group>"; };
+		285BDCF1CE610FE896C0A926 /* RKCardView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RKCardView.h; path = RKCard/RKCard/RKCardView.h; sourceTree = "<group>"; };
+		350949E942C3421BF2915A5E /* Pods-maven-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-maven-dummy.m"; sourceTree = "<group>"; };
+		4DE818B6D1758BFD345677C4 /* Pods-maven-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-maven-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50407D9D349AFD884D5FE81E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		55703533352C3BAB09C3D98B /* Pods-maven-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-maven-environment.h"; sourceTree = "<group>"; };
+		58F40F13E831C106D274DC42 /* libPods-maven-RKCardView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-maven-RKCardView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6757724283F3E7F166E454F4 /* Pods-maven-QBFlatButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-maven-QBFlatButton.xcconfig"; sourceTree = "<group>"; };
+		6BC2E395DE9FFEAA3B71DA60 /* MSDynamicsDrawerStyler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSDynamicsDrawerStyler.h; path = MSDynamicsDrawerViewController/MSDynamicsDrawerStyler.h; sourceTree = "<group>"; };
+		6DB8A2C91F593D540387E828 /* QBFlatButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QBFlatButton.h; path = Pod/Classes/QBFlatButton.h; sourceTree = "<group>"; };
+		6F0DD0D8FEDFBB39897CB3DE /* Pods-maven-RKCardView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-maven-RKCardView-Private.xcconfig"; sourceTree = "<group>"; };
+		6F33906339EE68694C510997 /* QBFlatButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QBFlatButton.m; path = Pod/Classes/QBFlatButton.m; sourceTree = "<group>"; };
+		72EF8E3427E37C100969046B /* MSDynamicsDrawerStyler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSDynamicsDrawerStyler.m; path = MSDynamicsDrawerViewController/MSDynamicsDrawerStyler.m; sourceTree = "<group>"; };
+		82DD5D1BAA1FC6029A7D7334 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8CEB2BE902C6B5D75ADA0D42 /* Pods-maven-MSDynamicsDrawerViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-maven-MSDynamicsDrawerViewController.xcconfig"; sourceTree = "<group>"; };
+		9003B86E738A0C126201BF2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		9698AAEDBB5C42300737929A /* Pods-maven-MSDynamicsDrawerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-maven-MSDynamicsDrawerViewController-prefix.pch"; sourceTree = "<group>"; };
+		9D62A5E00E10E2FB67623322 /* Pods-maven.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-maven.debug.xcconfig"; sourceTree = "<group>"; };
+		A97E421131204042AFA0D0D5 /* MSDynamicsDrawerViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MSDynamicsDrawerViewController.m; path = MSDynamicsDrawerViewController/MSDynamicsDrawerViewController.m; sourceTree = "<group>"; };
+		ACAA512DC26DEFD78C072A32 /* Pods-maven-MSDynamicsDrawerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-maven-MSDynamicsDrawerViewController-dummy.m"; sourceTree = "<group>"; };
+		BFF31D76DA3757095B610F96 /* Pods-maven-RKCardView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-maven-RKCardView-dummy.m"; sourceTree = "<group>"; };
+		C89DFB925A32F3506F9BF180 /* RKCardView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RKCardView.m; path = RKCard/RKCard/RKCardView.m; sourceTree = "<group>"; };
+		CC823B4C45203F1FE642C109 /* Pods-maven-QBFlatButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-maven-QBFlatButton-prefix.pch"; sourceTree = "<group>"; };
+		D312EC366CD5FEA2D2EC5875 /* MSDynamicsDrawerViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MSDynamicsDrawerViewController.h; path = MSDynamicsDrawerViewController/MSDynamicsDrawerViewController.h; sourceTree = "<group>"; };
+		D50555CEE540522CA8159DD1 /* libPods-maven.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-maven.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A811D28CC660EF57704758 /* Pods-maven-RKCardView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-maven-RKCardView.xcconfig"; sourceTree = "<group>"; };
+		E789473938A8F7F290FCF8F1 /* Pods-maven-MSDynamicsDrawerViewController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-maven-MSDynamicsDrawerViewController-Private.xcconfig"; sourceTree = "<group>"; };
+		E7F5F69EAC6AC0CE53A17CFA /* Pods-maven-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-maven-acknowledgements.plist"; sourceTree = "<group>"; };
+		EF4AA8A7596511BDE311177C /* Pods-maven-QBFlatButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-maven-QBFlatButton-Private.xcconfig"; sourceTree = "<group>"; };
+		F8C397C6742EAE4016E002FF /* Pods-maven-RKCardView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-maven-RKCardView-prefix.pch"; sourceTree = "<group>"; };
+		FC93AB39AFF56C06D810638C /* libPods-maven-QBFlatButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-maven-QBFlatButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C64D443F8427D5171F71E4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3792B6E84EEBCF753924D6C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3E3DA102CFFDDD71F5C6253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE50813C65810522C977A0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A56FE06513173042F8038D54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069E9B3380BB448DFC5018C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1D6F769BB0FB7C59CA6D04C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C1389822C15F072ED167BFC /* Foundation.framework in Frameworks */,
+				28269A6176BE9FFDB63F3B2D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DB37AC852D730B87F38D58C = {
+			isa = PBXGroup;
+			children = (
+				50407D9D349AFD884D5FE81E /* Podfile */,
+				BF5C76FDBD2DD48E926A00AB /* Frameworks */,
+				96382A07A6DA753CAEBFE28F /* Pods */,
+				55FB7A1961EC4C92629618C8 /* Products */,
+				BA94B124A24396E66AAA2253 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		40F3903CB383202AC4E5203C /* Pods-maven */ = {
+			isa = PBXGroup;
+			children = (
+				4DE818B6D1758BFD345677C4 /* Pods-maven-acknowledgements.markdown */,
+				E7F5F69EAC6AC0CE53A17CFA /* Pods-maven-acknowledgements.plist */,
+				350949E942C3421BF2915A5E /* Pods-maven-dummy.m */,
+				55703533352C3BAB09C3D98B /* Pods-maven-environment.h */,
+				101AAC6AFC18C63B056FF2DB /* Pods-maven-resources.sh */,
+				9D62A5E00E10E2FB67623322 /* Pods-maven.debug.xcconfig */,
+				1E52D21A5283F8F9688C5EA4 /* Pods-maven.release.xcconfig */,
+			);
+			name = "Pods-maven";
+			path = "Target Support Files/Pods-maven";
+			sourceTree = "<group>";
+		};
+		55FB7A1961EC4C92629618C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D50555CEE540522CA8159DD1 /* libPods-maven.a */,
+				0BC5BF568F01086485EF332D /* libPods-maven-MSDynamicsDrawerViewController.a */,
+				FC93AB39AFF56C06D810638C /* libPods-maven-QBFlatButton.a */,
+				58F40F13E831C106D274DC42 /* libPods-maven-RKCardView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EA94A1661E86619B1C069F0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6757724283F3E7F166E454F4 /* Pods-maven-QBFlatButton.xcconfig */,
+				EF4AA8A7596511BDE311177C /* Pods-maven-QBFlatButton-Private.xcconfig */,
+				17F360D6EE079C1746E792A6 /* Pods-maven-QBFlatButton-dummy.m */,
+				CC823B4C45203F1FE642C109 /* Pods-maven-QBFlatButton-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-maven-QBFlatButton";
+			sourceTree = "<group>";
+		};
+		96382A07A6DA753CAEBFE28F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4679DE6D3C626ED63DEC624 /* MSDynamicsDrawerViewController */,
+				EB431E7C020C167EC985940A /* QBFlatButton */,
+				AD9D9D9D4494406DAFE4ED43 /* RKCardView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AB335DC94BACD2F44B715FD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7A811D28CC660EF57704758 /* Pods-maven-RKCardView.xcconfig */,
+				6F0DD0D8FEDFBB39897CB3DE /* Pods-maven-RKCardView-Private.xcconfig */,
+				BFF31D76DA3757095B610F96 /* Pods-maven-RKCardView-dummy.m */,
+				F8C397C6742EAE4016E002FF /* Pods-maven-RKCardView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-maven-RKCardView";
+			sourceTree = "<group>";
+		};
+		9F38FB57397225936138F2CC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				82DD5D1BAA1FC6029A7D7334 /* Foundation.framework */,
+				9003B86E738A0C126201BF2F /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AD9D9D9D4494406DAFE4ED43 /* RKCardView */ = {
+			isa = PBXGroup;
+			children = (
+				285BDCF1CE610FE896C0A926 /* RKCardView.h */,
+				C89DFB925A32F3506F9BF180 /* RKCardView.m */,
+				9AB335DC94BACD2F44B715FD /* Support Files */,
+			);
+			path = RKCardView;
+			sourceTree = "<group>";
+		};
+		BA94B124A24396E66AAA2253 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				40F3903CB383202AC4E5203C /* Pods-maven */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BF5C76FDBD2DD48E926A00AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F38FB57397225936138F2CC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4679DE6D3C626ED63DEC624 /* MSDynamicsDrawerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6BC2E395DE9FFEAA3B71DA60 /* MSDynamicsDrawerStyler.h */,
+				72EF8E3427E37C100969046B /* MSDynamicsDrawerStyler.m */,
+				D312EC366CD5FEA2D2EC5875 /* MSDynamicsDrawerViewController.h */,
+				A97E421131204042AFA0D0D5 /* MSDynamicsDrawerViewController.m */,
+				F7CA5D19D16F34C6CE910F76 /* Support Files */,
+			);
+			path = MSDynamicsDrawerViewController;
+			sourceTree = "<group>";
+		};
+		EB431E7C020C167EC985940A /* QBFlatButton */ = {
+			isa = PBXGroup;
+			children = (
+				6DB8A2C91F593D540387E828 /* QBFlatButton.h */,
+				6F33906339EE68694C510997 /* QBFlatButton.m */,
+				5EA94A1661E86619B1C069F0 /* Support Files */,
+			);
+			path = QBFlatButton;
+			sourceTree = "<group>";
+		};
+		F7CA5D19D16F34C6CE910F76 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CEB2BE902C6B5D75ADA0D42 /* Pods-maven-MSDynamicsDrawerViewController.xcconfig */,
+				E789473938A8F7F290FCF8F1 /* Pods-maven-MSDynamicsDrawerViewController-Private.xcconfig */,
+				ACAA512DC26DEFD78C072A32 /* Pods-maven-MSDynamicsDrawerViewController-dummy.m */,
+				9698AAEDBB5C42300737929A /* Pods-maven-MSDynamicsDrawerViewController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-maven-MSDynamicsDrawerViewController";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3C6D2A3BE616C7A301C00BD1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E0FBFB50334C8E82DF9C62 /* MSDynamicsDrawerStyler.h in Headers */,
+				9E9D56E6034235B41F7E840B /* MSDynamicsDrawerViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4EDD1332CCAFB4319B454F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99413A417818E6602A44CC4F /* RKCardView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64F981034C191129F63EC43 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7F84403B2FA99663E83595 /* QBFlatButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D4F8FFA18994F9D632C1915 /* Pods-maven-RKCardView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80558BF5B9F975D0A42BBEED /* Build configuration list for PBXNativeTarget "Pods-maven-RKCardView" */;
+			buildPhases = (
+				7245DE67A4B3BA30A015AC37 /* Sources */,
+				0C64D443F8427D5171F71E4B /* Frameworks */,
+				CF4EDD1332CCAFB4319B454F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-maven-RKCardView";
+			productName = "Pods-maven-RKCardView";
+			productReference = 58F40F13E831C106D274DC42 /* libPods-maven-RKCardView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BA61EDBB01021E5D0FFE0E0F /* Pods-maven-QBFlatButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07B2CB59D38713E0FC16133B /* Build configuration list for PBXNativeTarget "Pods-maven-QBFlatButton" */;
+			buildPhases = (
+				5A03726890EBFF45C82C1130 /* Sources */,
+				A56FE06513173042F8038D54 /* Frameworks */,
+				E64F981034C191129F63EC43 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-maven-QBFlatButton";
+			productName = "Pods-maven-QBFlatButton";
+			productReference = FC93AB39AFF56C06D810638C /* libPods-maven-QBFlatButton.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C052F234B24FC4785C48C1BC /* Pods-maven */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE9B575363675135C58AD08 /* Build configuration list for PBXNativeTarget "Pods-maven" */;
+			buildPhases = (
+				DF5A4AF8128C000BB53103BC /* Sources */,
+				A3E3DA102CFFDDD71F5C6253 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4AE936765D2727D3970EF13 /* PBXTargetDependency */,
+				4B9D06CA34917495EEFC3EF1 /* PBXTargetDependency */,
+				83254C9C2E04A03DC98EBF22 /* PBXTargetDependency */,
+			);
+			name = "Pods-maven";
+			productName = "Pods-maven";
+			productReference = D50555CEE540522CA8159DD1 /* libPods-maven.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FC98D53189024D9D4B4225A7 /* Pods-maven-MSDynamicsDrawerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A367E698752315662F525AD7 /* Build configuration list for PBXNativeTarget "Pods-maven-MSDynamicsDrawerViewController" */;
+			buildPhases = (
+				C8CDB376B77B546A24405720 /* Sources */,
+				F1D6F769BB0FB7C59CA6D04C /* Frameworks */,
+				3C6D2A3BE616C7A301C00BD1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-maven-MSDynamicsDrawerViewController";
+			productName = "Pods-maven-MSDynamicsDrawerViewController";
+			productReference = 0BC5BF568F01086485EF332D /* libPods-maven-MSDynamicsDrawerViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24192B70287AE526B7374107 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 6336C7E50F23BB7E02E7C260 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0DB37AC852D730B87F38D58C;
+			productRefGroup = 55FB7A1961EC4C92629618C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C052F234B24FC4785C48C1BC /* Pods-maven */,
+				FC98D53189024D9D4B4225A7 /* Pods-maven-MSDynamicsDrawerViewController */,
+				BA61EDBB01021E5D0FFE0E0F /* Pods-maven-QBFlatButton */,
+				8D4F8FFA18994F9D632C1915 /* Pods-maven-RKCardView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A03726890EBFF45C82C1130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686A45179BB867A6E8C61647 /* Pods-maven-QBFlatButton-dummy.m in Sources */,
+				53D700A1BE636FE9575EBE10 /* QBFlatButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7245DE67A4B3BA30A015AC37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E977CB5D59FA2005547D6C04 /* Pods-maven-RKCardView-dummy.m in Sources */,
+				BC423D836E3647608AF8FC36 /* RKCardView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8CDB376B77B546A24405720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125693B64D25D625C98532D0 /* MSDynamicsDrawerStyler.m in Sources */,
+				5D06EC02A4E3928E3293D4CF /* MSDynamicsDrawerViewController.m in Sources */,
+				268BE85FC273CD1286EE0433 /* Pods-maven-MSDynamicsDrawerViewController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF5A4AF8128C000BB53103BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F62210FB9BEC65B1B00BDD0 /* Pods-maven-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B9D06CA34917495EEFC3EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-maven-QBFlatButton";
+			target = BA61EDBB01021E5D0FFE0E0F /* Pods-maven-QBFlatButton */;
+			targetProxy = A9AE7C360311E071854824C4 /* PBXContainerItemProxy */;
+		};
+		83254C9C2E04A03DC98EBF22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-maven-RKCardView";
+			target = 8D4F8FFA18994F9D632C1915 /* Pods-maven-RKCardView */;
+			targetProxy = A3E7B8392EF55D208B1EA17F /* PBXContainerItemProxy */;
+		};
+		C4AE936765D2727D3970EF13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-maven-MSDynamicsDrawerViewController";
+			target = FC98D53189024D9D4B4225A7 /* Pods-maven-MSDynamicsDrawerViewController */;
+			targetProxy = 833A1F91FECE6D6364FF1EBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34FF532113A46F288AE613BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E789473938A8F7F290FCF8F1 /* Pods-maven-MSDynamicsDrawerViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-maven-MSDynamicsDrawerViewController/Pods-maven-MSDynamicsDrawerViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5A1041E86E0638E1FE003FD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F0DD0D8FEDFBB39897CB3DE /* Pods-maven-RKCardView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-maven-RKCardView/Pods-maven-RKCardView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		604922F6C158A34F4F669ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4AA8A7596511BDE311177C /* Pods-maven-QBFlatButton-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-maven-QBFlatButton/Pods-maven-QBFlatButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6C063839B68354F4C5F69240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4AA8A7596511BDE311177C /* Pods-maven-QBFlatButton-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-maven-QBFlatButton/Pods-maven-QBFlatButton-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7A64BFD2CD4EF8DB1E7DC537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F0DD0D8FEDFBB39897CB3DE /* Pods-maven-RKCardView-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-maven-RKCardView/Pods-maven-RKCardView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8E3DBE079791DEC51F2F2F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D62A5E00E10E2FB67623322 /* Pods-maven.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9D6FF0100FBFC438148E74B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E789473938A8F7F290FCF8F1 /* Pods-maven-MSDynamicsDrawerViewController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-maven-MSDynamicsDrawerViewController/Pods-maven-MSDynamicsDrawerViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F1834D75170C15D4BCCFE4E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F57080505D39109C9537B061 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FA102E8F28F2CCDD4DD82DC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E52D21A5283F8F9688C5EA4 /* Pods-maven.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07B2CB59D38713E0FC16133B /* Build configuration list for PBXNativeTarget "Pods-maven-QBFlatButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604922F6C158A34F4F669ECE /* Debug */,
+				6C063839B68354F4C5F69240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6336C7E50F23BB7E02E7C260 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57080505D39109C9537B061 /* Debug */,
+				F1834D75170C15D4BCCFE4E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80558BF5B9F975D0A42BBEED /* Build configuration list for PBXNativeTarget "Pods-maven-RKCardView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A1041E86E0638E1FE003FD9 /* Debug */,
+				7A64BFD2CD4EF8DB1E7DC537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A367E698752315662F525AD7 /* Build configuration list for PBXNativeTarget "Pods-maven-MSDynamicsDrawerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D6FF0100FBFC438148E74B6 /* Debug */,
+				34FF532113A46F288AE613BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE9B575363675135C58AD08 /* Build configuration list for PBXNativeTarget "Pods-maven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E3DBE079791DEC51F2F2F81 /* Debug */,
+				FA102E8F28F2CCDD4DD82DC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24192B70287AE526B7374107 /* Project object */;
+}

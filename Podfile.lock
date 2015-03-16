@@ -1,0 +1,16 @@
+PODS:
+  - MSDynamicsDrawerViewController (1.5.1)
+  - QBFlatButton (1.1)
+  - RKCardView (0.1.0)
+
+DEPENDENCIES:
+  - MSDynamicsDrawerViewController
+  - QBFlatButton
+  - RKCardView
+
+SPEC CHECKSUMS:
+  MSDynamicsDrawerViewController: 0002059480a4b5ddde7eafbafb958a79a9b0ffaf
+  QBFlatButton: 5fcc26fe56e34cbae7c9de53aec38463f980c76e
+  RKCardView: bb96e9288f1ccc34468a2d52c5f83bcf58a506ee
+
+COCOAPODS: 0.36.0

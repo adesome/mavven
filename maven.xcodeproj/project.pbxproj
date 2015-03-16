@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C46FA551AB027D40028C255 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46FA541AB027D40028C255 /* main.m */; };
+		7C46FA581AB027D40028C255 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46FA571AB027D40028C255 /* AppDelegate.m */; };
+		7C46FA5B1AB027D40028C255 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46FA5A1AB027D40028C255 /* ViewController.m */; };
+		7C46FA5E1AB027D40028C255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C46FA5C1AB027D40028C255 /* Main.storyboard */; };
+		7C46FA601AB027D40028C255 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C46FA5F1AB027D40028C255 /* Images.xcassets */; };
+		7C46FA6F1AB027D40028C255 /* mavenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46FA6E1AB027D40028C255 /* mavenTests.m */; };
+		7C8D61631AB3246100A3F638 /* BEBAS___.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D61621AB3246100A3F638 /* BEBAS___.TTF */; };
+		7C8D61671AB3530F00A3F638 /* BBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D61661AB3530F00A3F638 /* BBHomeViewController.m */; };
+		7CAB0B9C1AB530B5006AB084 /* EventPreviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAB0B9B1AB530B5006AB084 /* EventPreviewView.xib */; };
+		7CAB0B9F1AB541CF006AB084 /* BBEventPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB0B9E1AB541CF006AB084 /* BBEventPreviewView.m */; };
+		7CAB0BA11AB565FD006AB084 /* EventFriendsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAB0BA01AB565FD006AB084 /* EventFriendsView.xib */; };
+		7CAB0BA71AB56A7C006AB084 /* BBEventFriendsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB0BA61AB56A7C006AB084 /* BBEventFriendsView.m */; };
+		7CAB0BA91AB56BB3006AB084 /* EventFriendsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAB0BA81AB56BB3006AB084 /* EventFriendsTableCell.xib */; };
+		7CAB0BAB1AB56BDB006AB084 /* EventInfoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAB0BAA1AB56BDB006AB084 /* EventInfoTableCell.xib */; };
+		7CAB0BB01AB581D9006AB084 /* EventLocationTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAB0BAF1AB581D9006AB084 /* EventLocationTableCell.xib */; };
+		7CAB0BB41AB5A20A006AB084 /* BBEditEventLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB0BB31AB5A20A006AB084 /* BBEditEventLocationViewController.m */; };
+		7CAB0BB81AB5A3DA006AB084 /* BBSideMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB0BB71AB5A3DA006AB084 /* BBSideMenuTableViewController.m */; };
+		7CAB0BBC1AB5BCE2006AB084 /* BBEventInboxYNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB0BBB1AB5BCE2006AB084 /* BBEventInboxYNViewController.m */; };
+		7CADAF8A1AB5115B00839643 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CADAF881AB5115B00839643 /* LaunchScreen.xib */; };
+		7CADAF8D1AB5184A00839643 /* BBCreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CADAF8C1AB5184A00839643 /* BBCreateEventViewController.m */; };
+		7CDF712A1AB4993D002DE182 /* BBSignupEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF71291AB4993D002DE182 /* BBSignupEmailViewController.m */; };
+		7CDF712D1AB4A927002DE182 /* BBPhoneNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF712C1AB4A927002DE182 /* BBPhoneNumberViewController.m */; };
+		7CDF71341AB4FBBF002DE182 /* BBEventPropertyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF71331AB4FBBF002DE182 /* BBEventPropertyView.m */; };
+		7CDF71361AB4FC46002DE182 /* EventPropertyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CDF71351AB4FC46002DE182 /* EventPropertyView.xib */; };
+		7CE17E121AB68A5E0095B6E8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CE17E111AB68A5E0095B6E8 /* MapKit.framework */; };
+		F0BC1C61D43F6FE5A11A8467 /* libPods-maven.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B77DF0137B3AE4C6DDBD0C23 /* libPods-maven.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C46FA691AB027D40028C255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C46FA471AB027D40028C255 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C46FA4E1AB027D40028C255;
+			remoteInfo = maven;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C46FA4F1AB027D40028C255 /* maven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maven.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C46FA531AB027D40028C255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C46FA541AB027D40028C255 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C46FA561AB027D40028C255 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7C46FA571AB027D40028C255 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7C46FA591AB027D40028C255 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7C46FA5A1AB027D40028C255 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7C46FA5D1AB027D40028C255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C46FA5F1AB027D40028C255 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7C46FA681AB027D40028C255 /* mavenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mavenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C46FA6D1AB027D40028C255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C46FA6E1AB027D40028C255 /* mavenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mavenTests.m; sourceTree = "<group>"; };
+		7C8D61621AB3246100A3F638 /* BEBAS___.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BEBAS___.TTF"; sourceTree = "<group>"; };
+		7C8D61651AB3530F00A3F638 /* BBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBHomeViewController.h; sourceTree = "<group>"; };
+		7C8D61661AB3530F00A3F638 /* BBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBHomeViewController.m; sourceTree = "<group>"; };
+		7CAB0B9B1AB530B5006AB084 /* EventPreviewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventPreviewView.xib; sourceTree = "<group>"; };
+		7CAB0B9D1AB541CF006AB084 /* BBEventPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEventPreviewView.h; sourceTree = "<group>"; };
+		7CAB0B9E1AB541CF006AB084 /* BBEventPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEventPreviewView.m; sourceTree = "<group>"; };
+		7CAB0BA01AB565FD006AB084 /* EventFriendsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventFriendsView.xib; sourceTree = "<group>"; };
+		7CAB0BA51AB56A7C006AB084 /* BBEventFriendsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEventFriendsView.h; sourceTree = "<group>"; };
+		7CAB0BA61AB56A7C006AB084 /* BBEventFriendsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEventFriendsView.m; sourceTree = "<group>"; };
+		7CAB0BA81AB56BB3006AB084 /* EventFriendsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventFriendsTableCell.xib; sourceTree = "<group>"; };
+		7CAB0BAA1AB56BDB006AB084 /* EventInfoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventInfoTableCell.xib; sourceTree = "<group>"; };
+		7CAB0BAD1AB57F8F006AB084 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		7CAB0BAF1AB581D9006AB084 /* EventLocationTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventLocationTableCell.xib; sourceTree = "<group>"; };
+		7CAB0BB21AB5A20A006AB084 /* BBEditEventLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEditEventLocationViewController.h; sourceTree = "<group>"; };
+		7CAB0BB31AB5A20A006AB084 /* BBEditEventLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEditEventLocationViewController.m; sourceTree = "<group>"; };
+		7CAB0BB61AB5A3DA006AB084 /* BBSideMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSideMenuTableViewController.h; sourceTree = "<group>"; };
+		7CAB0BB71AB5A3DA006AB084 /* BBSideMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSideMenuTableViewController.m; sourceTree = "<group>"; };
+		7CAB0BBA1AB5BCE2006AB084 /* BBEventInboxYNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEventInboxYNViewController.h; sourceTree = "<group>"; };
+		7CAB0BBB1AB5BCE2006AB084 /* BBEventInboxYNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEventInboxYNViewController.m; sourceTree = "<group>"; };
+		7CADAF891AB5115B00839643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7CADAF8B1AB5184A00839643 /* BBCreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCreateEventViewController.h; sourceTree = "<group>"; };
+		7CADAF8C1AB5184A00839643 /* BBCreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCreateEventViewController.m; sourceTree = "<group>"; };
+		7CDF71281AB4993D002DE182 /* BBSignupEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSignupEmailViewController.h; sourceTree = "<group>"; };
+		7CDF71291AB4993D002DE182 /* BBSignupEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSignupEmailViewController.m; sourceTree = "<group>"; };
+		7CDF712B1AB4A926002DE182 /* BBPhoneNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPhoneNumberViewController.h; sourceTree = "<group>"; };
+		7CDF712C1AB4A927002DE182 /* BBPhoneNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBPhoneNumberViewController.m; sourceTree = "<group>"; };
+		7CDF71321AB4FBBF002DE182 /* BBEventPropertyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEventPropertyView.h; sourceTree = "<group>"; };
+		7CDF71331AB4FBBF002DE182 /* BBEventPropertyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEventPropertyView.m; sourceTree = "<group>"; };
+		7CDF71351AB4FC46002DE182 /* EventPropertyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventPropertyView.xib; sourceTree = "<group>"; };
+		7CE17E111AB68A5E0095B6E8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7CE5CB8F3CC8FC1F26469954 /* Pods-maven.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maven.debug.xcconfig"; path = "Pods/Target Support Files/Pods-maven/Pods-maven.debug.xcconfig"; sourceTree = "<group>"; };
+		A671157E36D5245AFE1441A9 /* Pods-maven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-maven.release.xcconfig"; path = "Pods/Target Support Files/Pods-maven/Pods-maven.release.xcconfig"; sourceTree = "<group>"; };
+		B77DF0137B3AE4C6DDBD0C23 /* libPods-maven.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-maven.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C46FA4C1AB027D40028C255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE17E121AB68A5E0095B6E8 /* MapKit.framework in Frameworks */,
+				F0BC1C61D43F6FE5A11A8467 /* libPods-maven.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C46FA651AB027D40028C255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E2608197A6537816A1B5A82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CE17E111AB68A5E0095B6E8 /* MapKit.framework */,
+				B77DF0137B3AE4C6DDBD0C23 /* libPods-maven.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		709335EEAF0AC59B472164C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7CE5CB8F3CC8FC1F26469954 /* Pods-maven.debug.xcconfig */,
+				A671157E36D5245AFE1441A9 /* Pods-maven.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C46FA461AB027D40028C255 = {
+			isa = PBXGroup;
+			children = (
+				7C46FA511AB027D40028C255 /* maven */,
+				7C46FA6B1AB027D40028C255 /* mavenTests */,
+				7C46FA501AB027D40028C255 /* Products */,
+				709335EEAF0AC59B472164C1 /* Pods */,
+				1E2608197A6537816A1B5A82 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7C46FA501AB027D40028C255 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C46FA4F1AB027D40028C255 /* maven.app */,
+				7C46FA681AB027D40028C255 /* mavenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C46FA511AB027D40028C255 /* maven */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB0BB91AB5A4AC006AB084 /* SideMenuPanes */,
+				7CAB0BAC1AB57F37006AB084 /* Global */,
+				7CAB0BAE1AB58176006AB084 /* EventLocationView */,
+				7CAB0BA41AB56A42006AB084 /* EventFriendsView */,
+				7CAB0BA31AB569F7006AB084 /* EventPreviewView */,
+				7CAB0BA21AB569C2006AB084 /* EventPropertyView */,
+				7C8D61611AB323D800A3F638 /* Resources */,
+				7C46FA561AB027D40028C255 /* AppDelegate.h */,
+				7C46FA571AB027D40028C255 /* AppDelegate.m */,
+				7C46FA591AB027D40028C255 /* ViewController.h */,
+				7C46FA5A1AB027D40028C255 /* ViewController.m */,
+				7C8D61651AB3530F00A3F638 /* BBHomeViewController.h */,
+				7C8D61661AB3530F00A3F638 /* BBHomeViewController.m */,
+				7CDF71281AB4993D002DE182 /* BBSignupEmailViewController.h */,
+				7CDF71291AB4993D002DE182 /* BBSignupEmailViewController.m */,
+				7CDF712B1AB4A926002DE182 /* BBPhoneNumberViewController.h */,
+				7CDF712C1AB4A927002DE182 /* BBPhoneNumberViewController.m */,
+				7C46FA5C1AB027D40028C255 /* Main.storyboard */,
+				7CADAF881AB5115B00839643 /* LaunchScreen.xib */,
+				7C46FA521AB027D40028C255 /* Supporting Files */,
+			);
+			path = maven;
+			sourceTree = "<group>";
+		};
+		7C46FA521AB027D40028C255 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C46FA531AB027D40028C255 /* Info.plist */,
+				7C46FA541AB027D40028C255 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C46FA6B1AB027D40028C255 /* mavenTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C46FA6E1AB027D40028C255 /* mavenTests.m */,
+				7C46FA6C1AB027D40028C255 /* Supporting Files */,
+			);
+			path = mavenTests;
+			sourceTree = "<group>";
+		};
+		7C46FA6C1AB027D40028C255 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C46FA6D1AB027D40028C255 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C8D61611AB323D800A3F638 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C8D61641AB3249B00A3F638 /* Fonts */,
+				7C46FA5F1AB027D40028C255 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7C8D61641AB3249B00A3F638 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7C8D61621AB3246100A3F638 /* BEBAS___.TTF */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		7CAB0BA21AB569C2006AB084 /* EventPropertyView */ = {
+			isa = PBXGroup;
+			children = (
+				7CDF71321AB4FBBF002DE182 /* BBEventPropertyView.h */,
+				7CDF71331AB4FBBF002DE182 /* BBEventPropertyView.m */,
+				7CDF71351AB4FC46002DE182 /* EventPropertyView.xib */,
+			);
+			name = EventPropertyView;
+			sourceTree = "<group>";
+		};
+		7CAB0BA31AB569F7006AB084 /* EventPreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB0B9D1AB541CF006AB084 /* BBEventPreviewView.h */,
+				7CAB0B9E1AB541CF006AB084 /* BBEventPreviewView.m */,
+				7CAB0B9B1AB530B5006AB084 /* EventPreviewView.xib */,
+			);
+			name = EventPreviewView;
+			sourceTree = "<group>";
+		};
+		7CAB0BA41AB56A42006AB084 /* EventFriendsView */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB0BA01AB565FD006AB084 /* EventFriendsView.xib */,
+				7CAB0BA51AB56A7C006AB084 /* BBEventFriendsView.h */,
+				7CAB0BA61AB56A7C006AB084 /* BBEventFriendsView.m */,
+				7CAB0BA81AB56BB3006AB084 /* EventFriendsTableCell.xib */,
+				7CAB0BAA1AB56BDB006AB084 /* EventInfoTableCell.xib */,
+			);
+			name = EventFriendsView;
+			sourceTree = "<group>";
+		};
+		7CAB0BAC1AB57F37006AB084 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB0BAD1AB57F8F006AB084 /* Constant.h */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		7CAB0BAE1AB58176006AB084 /* EventLocationView */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB0BAF1AB581D9006AB084 /* EventLocationTableCell.xib */,
+			);
+			name = EventLocationView;
+			sourceTree = "<group>";
+		};
+		7CAB0BB11AB596AA006AB084 /* Panes */ = {
+			isa = PBXGroup;
+			children = (
+				7CADAF8B1AB5184A00839643 /* BBCreateEventViewController.h */,
+				7CADAF8C1AB5184A00839643 /* BBCreateEventViewController.m */,
+				7CAB0BB21AB5A20A006AB084 /* BBEditEventLocationViewController.h */,
+				7CAB0BB31AB5A20A006AB084 /* BBEditEventLocationViewController.m */,
+				7CAB0BBA1AB5BCE2006AB084 /* BBEventInboxYNViewController.h */,
+				7CAB0BBB1AB5BCE2006AB084 /* BBEventInboxYNViewController.m */,
+			);
+			name = Panes;
+			sourceTree = "<group>";
+		};
+		7CAB0BB51AB5A275006AB084 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB0BB61AB5A3DA006AB084 /* BBSideMenuTableViewController.h */,
+				7CAB0BB71AB5A3DA006AB084 /* BBSideMenuTableViewController.m */,
+			);
+			name = SideMenu;
+			sourceTree = "<group>";
+		};
+		7CAB0BB91AB5A4AC006AB084 /* SideMenuPanes */ = {
+			isa = PBXGroup;
+			children = (
+				7CAB0BB51AB5A275006AB084 /* SideMenu */,
+				7CAB0BB11AB596AA006AB084 /* Panes */,
+			);
+			name = SideMenuPanes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C46FA4E1AB027D40028C255 /* maven */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C46FA721AB027D40028C255 /* Build configuration list for PBXNativeTarget "maven" */;
+			buildPhases = (
+				93700AB93B527B87055F9665 /* Check Pods Manifest.lock */,
+				7C46FA4B1AB027D40028C255 /* Sources */,
+				7C46FA4C1AB027D40028C255 /* Frameworks */,
+				7C46FA4D1AB027D40028C255 /* Resources */,
+				DF04EE3A80531BFE08C697D8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = maven;
+			productName = maven;
+			productReference = 7C46FA4F1AB027D40028C255 /* maven.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C46FA671AB027D40028C255 /* mavenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C46FA751AB027D40028C255 /* Build configuration list for PBXNativeTarget "mavenTests" */;
+			buildPhases = (
+				7C46FA641AB027D40028C255 /* Sources */,
+				7C46FA651AB027D40028C255 /* Frameworks */,
+				7C46FA661AB027D40028C255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C46FA6A1AB027D40028C255 /* PBXTargetDependency */,
+			);
+			name = mavenTests;
+			productName = mavenTests;
+			productReference = 7C46FA681AB027D40028C255 /* mavenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C46FA471AB027D40028C255 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = mavenapp;
+				TargetAttributes = {
+					7C46FA4E1AB027D40028C255 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					7C46FA671AB027D40028C255 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 7C46FA4E1AB027D40028C255;
+					};
+				};
+			};
+			buildConfigurationList = 7C46FA4A1AB027D40028C255 /* Build configuration list for PBXProject "maven" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C46FA461AB027D40028C255;
+			productRefGroup = 7C46FA501AB027D40028C255 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C46FA4E1AB027D40028C255 /* maven */,
+				7C46FA671AB027D40028C255 /* mavenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C46FA4D1AB027D40028C255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CAB0B9C1AB530B5006AB084 /* EventPreviewView.xib in Resources */,
+				7CAB0BA11AB565FD006AB084 /* EventFriendsView.xib in Resources */,
+				7CADAF8A1AB5115B00839643 /* LaunchScreen.xib in Resources */,
+				7CAB0BAB1AB56BDB006AB084 /* EventInfoTableCell.xib in Resources */,
+				7C46FA5E1AB027D40028C255 /* Main.storyboard in Resources */,
+				7C46FA601AB027D40028C255 /* Images.xcassets in Resources */,
+				7C8D61631AB3246100A3F638 /* BEBAS___.TTF in Resources */,
+				7CDF71361AB4FC46002DE182 /* EventPropertyView.xib in Resources */,
+				7CAB0BB01AB581D9006AB084 /* EventLocationTableCell.xib in Resources */,
+				7CAB0BA91AB56BB3006AB084 /* EventFriendsTableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C46FA661AB027D40028C255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		93700AB93B527B87055F9665 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF04EE3A80531BFE08C697D8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-maven/Pods-maven-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C46FA4B1AB027D40028C255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CAB0B9F1AB541CF006AB084 /* BBEventPreviewView.m in Sources */,
+				7CDF712D1AB4A927002DE182 /* BBPhoneNumberViewController.m in Sources */,
+				7CAB0BBC1AB5BCE2006AB084 /* BBEventInboxYNViewController.m in Sources */,
+				7CADAF8D1AB5184A00839643 /* BBCreateEventViewController.m in Sources */,
+				7C46FA5B1AB027D40028C255 /* ViewController.m in Sources */,
+				7CDF71341AB4FBBF002DE182 /* BBEventPropertyView.m in Sources */,
+				7CAB0BA71AB56A7C006AB084 /* BBEventFriendsView.m in Sources */,
+				7C8D61671AB3530F00A3F638 /* BBHomeViewController.m in Sources */,
+				7C46FA581AB027D40028C255 /* AppDelegate.m in Sources */,
+				7CAB0BB41AB5A20A006AB084 /* BBEditEventLocationViewController.m in Sources */,
+				7CDF712A1AB4993D002DE182 /* BBSignupEmailViewController.m in Sources */,
+				7C46FA551AB027D40028C255 /* main.m in Sources */,
+				7CAB0BB81AB5A3DA006AB084 /* BBSideMenuTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C46FA641AB027D40028C255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C46FA6F1AB027D40028C255 /* mavenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C46FA6A1AB027D40028C255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C46FA4E1AB027D40028C255 /* maven */;
+			targetProxy = 7C46FA691AB027D40028C255 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C46FA5C1AB027D40028C255 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C46FA5D1AB027D40028C255 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CADAF881AB5115B00839643 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CADAF891AB5115B00839643 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C46FA701AB027D40028C255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C46FA711AB027D40028C255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C46FA731AB027D40028C255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CE5CB8F3CC8FC1F26469954 /* Pods-maven.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = maven/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7C46FA741AB027D40028C255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A671157E36D5245AFE1441A9 /* Pods-maven.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = maven/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7C46FA761AB027D40028C255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = mavenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/maven.app/maven";
+			};
+			name = Debug;
+		};
+		7C46FA771AB027D40028C255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = mavenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/maven.app/maven";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C46FA4A1AB027D40028C255 /* Build configuration list for PBXProject "maven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C46FA701AB027D40028C255 /* Debug */,
+				7C46FA711AB027D40028C255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C46FA721AB027D40028C255 /* Build configuration list for PBXNativeTarget "maven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C46FA731AB027D40028C255 /* Debug */,
+				7C46FA741AB027D40028C255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C46FA751AB027D40028C255 /* Build configuration list for PBXNativeTarget "mavenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C46FA761AB027D40028C255 /* Debug */,
+				7C46FA771AB027D40028C255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C46FA471AB027D40028C255 /* Project object */;
+}
