@@ -14,6 +14,8 @@
 
 @property (strong, nonatomic) MSDynamicsDrawerViewController *dynamicsDrawerViewController;
 
+@property (weak, nonatomic) IBOutlet UITextField *phonenumberTextField;
+
 - (IBAction)backButtonAction:(id)sender;
 - (IBAction)continueButtonAction:(id)sender;
 

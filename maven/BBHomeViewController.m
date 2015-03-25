@@ -7,6 +7,9 @@
 //
 
 #import "BBHomeViewController.h"
+#import "UIButton+PPiAwesome.h"
+#import "UIAwesomeButton.h"
+#import <Parse/Parse.h>
 
 @interface BBHomeViewController ()
 
@@ -16,6 +19,42 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    // Button
+    [self.loginButton setIsAwesome:YES];
+    [self.loginButton setButtonText:@"Login"];
+    [self.loginButton setTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15], NSForegroundColorAttributeName:[UIColor whiteColor]} forUIControlState:UIControlStateNormal];
+    [self.loginButton setRadius:2.0];
+    [self.loginButton setBackgroundColor:[UIColor colorWithRed:9.0f/255 green:180.0f/255 blue:144.0f/255 alpha:1.0] forUIControlState:UIControlStateNormal];
+    [self.loginButton setBackgroundColor:[UIColor colorWithRed:37.0f/255 green:105.0f/255 blue:90.0f/255 alpha:1.0] forUIControlState:UIControlStateHighlighted];
+    
+    [self.signupButton setIsAwesome:YES];
+    [self.signupButton setButtonText:@"Singup"];
+    [self.signupButton setTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15], NSForegroundColorAttributeName:[UIColor whiteColor]} forUIControlState:UIControlStateNormal];
+    [self.signupButton setRadius:2.0];
+    [self.signupButton setBackgroundColor:[UIColor colorWithRed:9.0f/255 green:180.0f/255 blue:144.0f/255 alpha:1.0] forUIControlState:UIControlStateNormal];
+    [self.signupButton setBackgroundColor:[UIColor colorWithRed:37.0f/255 green:105.0f/255 blue:90.0f/255 alpha:1.0] forUIControlState:UIControlStateHighlighted];
+    
+    
+    
+    PFUser *user = [PFUser user];
+    user.username = @"my name";
+    user.password = @"my pass";
+    user.email = @"email@example.com";
+  
+    
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            // Hooray! Let them use the app now.
+            NSLog(@"success");
+        } else {
+            NSString *errorString = [error userInfo][@"error"];
+            // Show the errorString somewhere and let the user try again.
+            NSLog(@"%@", errorString);
+        }
+    }];
+    
+    
     // Do any additional setup after loading the view.
     /*
     
@@ -41,12 +80,12 @@
     
     
     // Tap gesture recognizer for facebookLogin view
-    UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(facebookLoginViewTapped:)];
-    
+    //UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(facebookLoginViewTapped:)];
+    /*
     [self.facebookLoginView addGestureRecognizer:tapGestureRecognizer];
     self.facebookLoginView.userInteractionEnabled = YES;
     
-    
+    */
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -75,4 +114,11 @@
     NSLog(@"facebookLoginViewTapped");
 }
 
+- (IBAction)loginButtonSelected:(id)sender {
+
+}
+
+- (IBAction)signupButtonSelected:(id)sender {
+ 
+}
 @end

@@ -4,53 +4,75 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-maven-Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-maven-Facebook-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-maven-FontAwesome+iOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-maven-MSDynamicsDrawerViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
-		<key>Pods-maven-QBFlatButton.xcscheme</key>
+		<key>Pods-maven-PPiAwesomeButton.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
-		<key>Pods-maven-RKCardView.xcscheme</key>
+		<key>Pods-maven-ParseUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods-maven.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8D4F8FFA18994F9D632C1915</key>
+		<key>1A0A872B150CEA89448F6698</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA61EDBB01021E5D0FFE0E0F</key>
+		<key>461CA8765B3D944D4D8AA2F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C052F234B24FC4785C48C1BC</key>
+		<key>5F20CE2BF6591BB1F514984E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FC98D53189024D9D4B4225A7</key>
+		<key>83663655B23D68F4D840A321</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9A3E46089968F2AD88CAFF2A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BDB39E3F274D39CD307BD7B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D08C25D4658DBFC2DFA84A34</key>
 		<dict>
 			<key>primary</key>
 			<true/>

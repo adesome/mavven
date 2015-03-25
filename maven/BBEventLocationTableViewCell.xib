@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6246"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventLocationTableViewCellID" id="23h-kP-Io9" customClass="BBEventLocationTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="23h-kP-Io9" id="vHH-ky-eXt">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="position-in-table" translatesAutoresizingMaskIntoConstraints="NO" id="3f1-ZT-WEa">
+                        <rect key="frame" x="16" y="6" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="y21-gx-yen"/>
+                            <constraint firstAttribute="width" constant="32" id="yQR-Ge-l8Z"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Patio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8n-JG-Cq7">
+                        <rect key="frame" x="40" y="10" width="264" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="voo-bt-F8m"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="413 University Avenue,Palo Alto, CA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cch-w8-7qy">
+                        <rect key="frame" x="40" y="25" width="265" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="4K6-uZ-bQj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cch-w8-7qy" secondAttribute="bottom" constant="6" id="Me8-kV-LBN"/>
+                    <constraint firstItem="U8n-JG-Cq7" firstAttribute="leading" secondItem="vHH-ky-eXt" secondAttribute="leading" constant="40" id="S99-A6-Efz"/>
+                    <constraint firstAttribute="trailing" secondItem="cch-w8-7qy" secondAttribute="trailing" constant="15" id="SMs-l2-7lr"/>
+                    <constraint firstAttribute="trailing" secondItem="U8n-JG-Cq7" secondAttribute="trailing" constant="16" id="U91-H3-95Q"/>
+                    <constraint firstItem="3f1-ZT-WEa" firstAttribute="leading" secondItem="vHH-ky-eXt" secondAttribute="leading" constant="16" id="Z5g-1l-qQk"/>
+                    <constraint firstItem="cch-w8-7qy" firstAttribute="leading" secondItem="vHH-ky-eXt" secondAttribute="leading" constant="40" id="diF-ii-HfS"/>
+                    <constraint firstItem="3f1-ZT-WEa" firstAttribute="top" secondItem="vHH-ky-eXt" secondAttribute="top" constant="6" id="fJi-Qe-G0w"/>
+                    <constraint firstItem="U8n-JG-Cq7" firstAttribute="top" secondItem="vHH-ky-eXt" secondAttribute="top" constant="10" id="kqx-me-hlg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellItemAddressLabel" destination="cch-w8-7qy" id="D67-1e-pV6"/>
+                <outlet property="cellItemImaveView" destination="3f1-ZT-WEa" id="EdY-dp-2Ic"/>
+                <outlet property="cellItemTitleLabel" destination="U8n-JG-Cq7" id="KvV-7D-e0K"/>
+            </connections>
+            <point key="canvasLocation" x="346" y="306"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="position-in-table" width="10" height="14"/>
+    </resources>
+</document>

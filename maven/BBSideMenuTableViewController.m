@@ -11,10 +11,15 @@
 #import "MSDynamicsDrawerViewController.h"
 #import "MSDynamicsDrawerStyler.h"
 
+#import "BBSideMenuTableViewCell.h"
+
+NSString * const BBSideMenuTableCellReuseIdentifier = @"sideMenuTableViewCellID";
+
 @interface BBSideMenuTableViewController ()
 
 @property (nonatomic, strong) NSDictionary *paneViewControllerTitles;
 @property (nonatomic, strong) NSDictionary *paneViewControllerIdentifiers;
+@property (nonatomic, strong) NSDictionary *sideMenuIcons;
 
 @end
 
@@ -28,6 +33,14 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.separatorColor = [UIColor colorWithRed:(35.0f/255.0f) green:(35.0f/255.0f) blue:(35.0f/255.0f) alpha:0.25];
+}
+
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskAllButUpsideDown;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,34 +51,79 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return MSPaneViewControllerTypeCount;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    BBSideMenuTableViewCell *cell = (BBSideMenuTableViewCell*)[tableView dequeueReusableCellWithIdentifier:BBSideMenuTableCellReuseIdentifier];
     
     // Configure the cell...
+    if (!cell)
+    {
+        [tableView registerNib:[UINib nibWithNibName:@"BBSideMenuTableViewCell" bundle:nil] forCellReuseIdentifier:BBSideMenuTableCellReuseIdentifier];
+        cell = (BBSideMenuTableViewCell*)[tableView dequeueReusableCellWithIdentifier:BBSideMenuTableCellReuseIdentifier];
+    }
+
+    // Separator color
+    tableView.separatorColor = [UIColor colorWithRed:(35.0f/255.0f) green:(35.0f/255.0f) blue:(35.0f/255.0f) alpha:1.0];
+    
+    cell.celllabelContainView.frame = CGRectZero;
+    
+    // Cell
+    NSString* cellIconName = @"";
+    NSString* cellTitle = @"";
+    NSString* cellBadge = @"1";
+    
+    cellIconName = self.sideMenuIcons[@(indexPath.row)];
+    cellTitle = self.paneViewControllerTitles[@(indexPath.row)];
+    
+    cell.backgroundColor = [UIColor clearColor];
+    [cell.cellItemIconImageView setImage:[UIImage imageNamed:cellIconName]];
+    [cell.cellItemTitleLabel setText:cellTitle];
+    
+    if (indexPath.row == BBPaneViewControllerTypeEventInbox) {
+        
+        [cell.cellItemBadgeLabel setText:cellBadge];
+        
+        {
+            UIFont * mFont = cell.cellItemBadgeLabel.font;
+            NSMutableParagraphStyle * paragraphStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
+            paragraphStyle.lineBreakMode = cell.cellItemBadgeLabel.lineBreakMode;
+            
+            NSDictionary * attributes = @{NSFontAttributeName : mFont , NSParagraphStyleAttributeName : paragraphStyle};
+            CGSize expectedLabelSize = [cellBadge sizeWithAttributes:attributes];
+            
+            CGRect txtRect = [cellBadge boundingRectWithSize:expectedLabelSize options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil];
+            
+            cell.cellItemBadgeLabel.frame = txtRect;
+         
+            [cell.cellItemBadgeLabel layoutIfNeeded];
+            [cell.cellItemBadgeLabel updateConstraints];
+        }
+    }
+    else {
+        [cell.celllabelContainView setHidden:YES];
+    }
     
     return cell;
 }
-*/
 
-/*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
-*/
+
 
 /*
 // Override to support editing the table view.
@@ -103,6 +161,26 @@
 }
 */
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return [UIView new];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return [UIView new]; // Hacky way to prevent extra dividers after the end of the table from showing
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 20.0;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return CGFLOAT_MIN; // Hacky way to prevent extra dividers after the end of the table from showing
+}
+
 #pragma mark - NSObject
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
@@ -125,6 +203,8 @@
     return self;
 }
 
+#pragma mark - BBSideMenuTableViewController
+
 - (void)initialize
 {
     self.paneViewControllerType = NSUIntegerMax;
@@ -132,24 +212,41 @@
                                       @(BBPaneViewControllerTypeProfile) : @"Profile",
                                       @(BBPaneViewControllerTypeMyEvents) : @"My Events",
                                       @(BBPaneViewControllerTypeEventInbox) : @"Event Inbox",
-                                      @(BBPaneViewControllerTypeSendFeedback) : @"Send feedback",
-                                      @(BBPaneViewControllerTypeLogout) : @""
+                                      @(BBPaneViewControllerTypeSendFeedback) : @"Send Feedback",
+                                      @(BBPaneViewControllerTypeLogout) : @"Logout"
                                       };
 
     self.paneViewControllerIdentifiers = @{                                           
-                                           @(BBPaneViewControllerTypeProfile) : @"Stylers",
-                                           @(BBPaneViewControllerTypeMyEvents) : @"Dynamics",
+                                           @(BBPaneViewControllerTypeProfile) : @"profileViewControllerID",
+                                           @(BBPaneViewControllerTypeMyEvents) : @"myEventsViewControllerID",
                                            @(BBPaneViewControllerTypeEventInbox) : @"eventInboxYNViewControllerID",
-                                           @(BBPaneViewControllerTypeSendFeedback) : @"Gestures",
+                                           @(BBPaneViewControllerTypeSendFeedback) : @"sendFeedbackViewControllerID",
                                            @(BBPaneViewControllerTypeLogout) : @""
                                            };
+    self.sideMenuIcons = @{
+                                      @(BBPaneViewControllerTypeProfile) : @"",
+                                      @(BBPaneViewControllerTypeMyEvents) : @"menu-myevent",
+                                      @(BBPaneViewControllerTypeEventInbox) : @"menu-inbox",
+                                      @(BBPaneViewControllerTypeSendFeedback) : @"menu-feedback",
+                                      @(BBPaneViewControllerTypeLogout) : @"menu-logout"
+                                      };
+}
 
+- (BBPaneViewControllerType)paneViewControllerTypeForIndexPath:(NSIndexPath *)indexPath
+{
+    BBPaneViewControllerType paneViewControllerType;
+    if (indexPath.section == 0) {
+        paneViewControllerType = indexPath.row;
+    } else {
+        paneViewControllerType = NSUIntegerMax;
+    }
+    NSAssert(paneViewControllerType < MSPaneViewControllerTypeCount, @"Invalid Index Path");
+    return paneViewControllerType;
 }
 
 - (void)transitionToViewController:(BBPaneViewControllerType)paneViewControllerType
 {
     NSLog(@"PaneType: %@", self.paneViewControllerIdentifiers[@(paneViewControllerType)]);
-    
     
     // Close pane if already displaying that pane view controller
     if (paneViewControllerType == self.paneViewControllerType) {
@@ -159,14 +256,50 @@
     
     BOOL animateTransition = self.dynamicsDrawerViewController.paneViewController != nil;
     
-    
+    // Navigation controller
     UIViewController *paneViewController = [self.storyboard instantiateViewControllerWithIdentifier:self.paneViewControllerIdentifiers[@(paneViewControllerType)]];
     
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:paneViewController];
+    UINavigationController *paneNavigationViewController = [[UINavigationController alloc] initWithRootViewController:paneViewController];
     
-    [self.dynamicsDrawerViewController setPaneViewController:nav animated:animateTransition completion:nil];
+    [self.dynamicsDrawerViewController setPaneViewController:paneNavigationViewController animated:animateTransition completion:nil];
 
+    self.paneViewControllerType = paneViewControllerType;
+}
 
+- (void)dynamicsDrawerRevealLeftBarButtonItemTapped:(id)sender
+{
+    [self.dynamicsDrawerViewController setPaneState:MSDynamicsDrawerPaneStateOpen inDirection:MSDynamicsDrawerDirectionLeft animated:YES allowUserInterruption:YES completion:nil];
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    BBPaneViewControllerType paneViewControllerType = [self paneViewControllerTypeForIndexPath:indexPath];
+    
+    if (paneViewControllerType == BBPaneViewControllerTypeLogout) {
+        
+        // Logout
+    }
+    else {
+        [self transitionToViewController:paneViewControllerType];
+    }
+    
+    // Prevent visual display bug with cell dividers
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    double delayInSeconds = 0.3;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [self.tableView reloadData];
+    });
+}
+
+#pragma mark - MSDynamicsDrawerViewControllerDelegate
+
+- (void)dynamicsDrawerViewController:(MSDynamicsDrawerViewController *)dynamicsDrawerViewController didUpdateToPaneState:(MSDynamicsDrawerPaneState)state
+{
+    // Ensure that the pane's table view can scroll to top correctly
+    self.tableView.scrollsToTop = (state == MSDynamicsDrawerPaneStateOpen);
 }
 
 @end

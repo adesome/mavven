@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <QBFlatButton.h>
 
 @interface BBHomeViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIView *facebookLoginView;
+- (IBAction)loginButtonSelected:(id)sender;
 
+- (IBAction)signupButtonSelected:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *signupButton;
 
 @end

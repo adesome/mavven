@@ -78,7 +78,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox-checked" translatesAutoresizingMaskIntoConstraints="NO" id="ruU-Sl-0Il">
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox-on" translatesAutoresizingMaskIntoConstraints="NO" id="ruU-Sl-0Il">
                     <rect key="frame" x="15" y="292" width="15" height="22"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="22" id="8u8-zx-Aqw"/>
@@ -136,6 +136,6 @@
         </view>
     </objects>
     <resources>
-        <image name="checkbox-checked" width="15" height="15"/>
+        <image name="checkbox-on" width="15" height="15"/>
     </resources>
 </document>

@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C05E3D21AB976A400EA3F8B /* BBProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C05E3D11AB976A400EA3F8B /* BBProfileViewController.m */; };
+		7C05E3D51AB9969800EA3F8B /* BBMyEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C05E3D41AB9969800EA3F8B /* BBMyEventsViewController.m */; };
+		7C05E3D81AB99C5500EA3F8B /* SendFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C05E3D71AB99C5500EA3F8B /* SendFeedbackViewController.m */; };
+		7C05E3DB1AB9FCB800EA3F8B /* BBSideMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C05E3DA1AB9FCB800EA3F8B /* BBSideMenuTableViewCell.m */; };
+		7C05E3DF1ABA062900EA3F8B /* BBSideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C05E3DE1ABA062900EA3F8B /* BBSideMenuTableViewCell.xib */; };
+		7C1F2DF11ABCB31F0036601C /* BBEventLocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1F2DF01ABCB31F0036601C /* BBEventLocationTableViewCell.m */; };
+		7C1F2DF71ABCCA400036601C /* BBEventLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1F2DF61ABCCA400036601C /* BBEventLocationViewController.m */; };
 		7C46FA551AB027D40028C255 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46FA541AB027D40028C255 /* main.m */; };
 		7C46FA581AB027D40028C255 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46FA571AB027D40028C255 /* AppDelegate.m */; };
-		7C46FA5B1AB027D40028C255 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46FA5A1AB027D40028C255 /* ViewController.m */; };
 		7C46FA5E1AB027D40028C255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C46FA5C1AB027D40028C255 /* Main.storyboard */; };
 		7C46FA601AB027D40028C255 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C46FA5F1AB027D40028C255 /* Images.xcassets */; };
 		7C46FA6F1AB027D40028C255 /* mavenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46FA6E1AB027D40028C255 /* mavenTests.m */; };
@@ -21,12 +27,26 @@
 		7CAB0BA71AB56A7C006AB084 /* BBEventFriendsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB0BA61AB56A7C006AB084 /* BBEventFriendsView.m */; };
 		7CAB0BA91AB56BB3006AB084 /* EventFriendsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAB0BA81AB56BB3006AB084 /* EventFriendsTableCell.xib */; };
 		7CAB0BAB1AB56BDB006AB084 /* EventInfoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAB0BAA1AB56BDB006AB084 /* EventInfoTableCell.xib */; };
-		7CAB0BB01AB581D9006AB084 /* EventLocationTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CAB0BAF1AB581D9006AB084 /* EventLocationTableCell.xib */; };
 		7CAB0BB41AB5A20A006AB084 /* BBEditEventLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB0BB31AB5A20A006AB084 /* BBEditEventLocationViewController.m */; };
 		7CAB0BB81AB5A3DA006AB084 /* BBSideMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB0BB71AB5A3DA006AB084 /* BBSideMenuTableViewController.m */; };
 		7CAB0BBC1AB5BCE2006AB084 /* BBEventInboxYNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAB0BBB1AB5BCE2006AB084 /* BBEventInboxYNViewController.m */; };
+		7CAD86071ABA77D000181F38 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CAD86061ABA77D000181F38 /* QuartzCore.framework */; };
 		7CADAF8A1AB5115B00839643 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CADAF881AB5115B00839643 /* LaunchScreen.xib */; };
 		7CADAF8D1AB5184A00839643 /* BBCreateEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CADAF8C1AB5184A00839643 /* BBCreateEventViewController.m */; };
+		7CB6EB3D1ABF2C890040AA4B /* BBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6EB3C1ABF2C890040AA4B /* BBLoginViewController.m */; };
+		7CBAE2D01ABAB825006E8D02 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2CF1ABAB825006E8D02 /* Accounts.framework */; };
+		7CBAE2D21ABAB836006E8D02 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2D11ABAB836006E8D02 /* AudioToolbox.framework */; };
+		7CBAE2D41ABAB844006E8D02 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2D31ABAB844006E8D02 /* CFNetwork.framework */; };
+		7CBAE2D61ABAB852006E8D02 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2D51ABAB852006E8D02 /* CoreGraphics.framework */; };
+		7CBAE2D81ABAB85D006E8D02 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2D71ABAB85D006E8D02 /* CoreLocation.framework */; };
+		7CBAE2DA1ABAB868006E8D02 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2D91ABAB868006E8D02 /* MobileCoreServices.framework */; };
+		7CBAE2DC1ABAB880006E8D02 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2DB1ABAB880006E8D02 /* Security.framework */; };
+		7CBAE2DE1ABAB88F006E8D02 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2DD1ABAB88F006E8D02 /* Social.framework */; };
+		7CBAE2E01ABAB8A0006E8D02 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2DF1ABAB8A0006E8D02 /* StoreKit.framework */; };
+		7CBAE2E21ABAB8AC006E8D02 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2E11ABAB8AC006E8D02 /* SystemConfiguration.framework */; };
+		7CBAE2E41ABAB8B6006E8D02 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2E31ABAB8B6006E8D02 /* libz.dylib */; };
+		7CBAE2E61ABAB8C5006E8D02 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CBAE2E51ABAB8C5006E8D02 /* libsqlite3.dylib */; };
+		7CBAE2E81ABACFDC006E8D02 /* BBEventLocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAE2E71ABACFDC006E8D02 /* BBEventLocationTableViewCell.xib */; };
 		7CDF712A1AB4993D002DE182 /* BBSignupEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF71291AB4993D002DE182 /* BBSignupEmailViewController.m */; };
 		7CDF712D1AB4A927002DE182 /* BBPhoneNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF712C1AB4A927002DE182 /* BBPhoneNumberViewController.m */; };
 		7CDF71341AB4FBBF002DE182 /* BBEventPropertyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDF71331AB4FBBF002DE182 /* BBEventPropertyView.m */; };
@@ -46,13 +66,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C05E3D01AB976A400EA3F8B /* BBProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBProfileViewController.h; sourceTree = "<group>"; };
+		7C05E3D11AB976A400EA3F8B /* BBProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBProfileViewController.m; sourceTree = "<group>"; };
+		7C05E3D31AB9969800EA3F8B /* BBMyEventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBMyEventsViewController.h; sourceTree = "<group>"; };
+		7C05E3D41AB9969800EA3F8B /* BBMyEventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBMyEventsViewController.m; sourceTree = "<group>"; };
+		7C05E3D61AB99C5500EA3F8B /* SendFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendFeedbackViewController.h; sourceTree = "<group>"; };
+		7C05E3D71AB99C5500EA3F8B /* SendFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendFeedbackViewController.m; sourceTree = "<group>"; };
+		7C05E3D91AB9FCB800EA3F8B /* BBSideMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSideMenuTableViewCell.h; sourceTree = "<group>"; };
+		7C05E3DA1AB9FCB800EA3F8B /* BBSideMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSideMenuTableViewCell.m; sourceTree = "<group>"; };
+		7C05E3DE1ABA062900EA3F8B /* BBSideMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBSideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		7C1F2DEF1ABCB31F0036601C /* BBEventLocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEventLocationTableViewCell.h; sourceTree = "<group>"; };
+		7C1F2DF01ABCB31F0036601C /* BBEventLocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEventLocationTableViewCell.m; sourceTree = "<group>"; };
+		7C1F2DF51ABCCA400036601C /* BBEventLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEventLocationViewController.h; sourceTree = "<group>"; };
+		7C1F2DF61ABCCA400036601C /* BBEventLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEventLocationViewController.m; sourceTree = "<group>"; };
 		7C46FA4F1AB027D40028C255 /* maven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = maven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C46FA531AB027D40028C255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C46FA541AB027D40028C255 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C46FA561AB027D40028C255 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7C46FA571AB027D40028C255 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7C46FA591AB027D40028C255 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7C46FA5A1AB027D40028C255 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7C46FA5D1AB027D40028C255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C46FA5F1AB027D40028C255 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7C46FA681AB027D40028C255 /* mavenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mavenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,16 +101,31 @@
 		7CAB0BA81AB56BB3006AB084 /* EventFriendsTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventFriendsTableCell.xib; sourceTree = "<group>"; };
 		7CAB0BAA1AB56BDB006AB084 /* EventInfoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventInfoTableCell.xib; sourceTree = "<group>"; };
 		7CAB0BAD1AB57F8F006AB084 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
-		7CAB0BAF1AB581D9006AB084 /* EventLocationTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventLocationTableCell.xib; sourceTree = "<group>"; };
 		7CAB0BB21AB5A20A006AB084 /* BBEditEventLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEditEventLocationViewController.h; sourceTree = "<group>"; };
 		7CAB0BB31AB5A20A006AB084 /* BBEditEventLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEditEventLocationViewController.m; sourceTree = "<group>"; };
 		7CAB0BB61AB5A3DA006AB084 /* BBSideMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSideMenuTableViewController.h; sourceTree = "<group>"; };
 		7CAB0BB71AB5A3DA006AB084 /* BBSideMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSideMenuTableViewController.m; sourceTree = "<group>"; };
 		7CAB0BBA1AB5BCE2006AB084 /* BBEventInboxYNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEventInboxYNViewController.h; sourceTree = "<group>"; };
 		7CAB0BBB1AB5BCE2006AB084 /* BBEventInboxYNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEventInboxYNViewController.m; sourceTree = "<group>"; };
+		7CAD86061ABA77D000181F38 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7CADAF891AB5115B00839643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7CADAF8B1AB5184A00839643 /* BBCreateEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBCreateEventViewController.h; sourceTree = "<group>"; };
 		7CADAF8C1AB5184A00839643 /* BBCreateEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBCreateEventViewController.m; sourceTree = "<group>"; };
+		7CB6EB3B1ABF2C890040AA4B /* BBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBLoginViewController.h; sourceTree = "<group>"; };
+		7CB6EB3C1ABF2C890040AA4B /* BBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBLoginViewController.m; sourceTree = "<group>"; };
+		7CBAE2CF1ABAB825006E8D02 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		7CBAE2D11ABAB836006E8D02 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7CBAE2D31ABAB844006E8D02 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7CBAE2D51ABAB852006E8D02 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7CBAE2D71ABAB85D006E8D02 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7CBAE2D91ABAB868006E8D02 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7CBAE2DB1ABAB880006E8D02 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7CBAE2DD1ABAB88F006E8D02 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7CBAE2DF1ABAB8A0006E8D02 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		7CBAE2E11ABAB8AC006E8D02 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7CBAE2E31ABAB8B6006E8D02 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		7CBAE2E51ABAB8C5006E8D02 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		7CBAE2E71ABACFDC006E8D02 /* BBEventLocationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBEventLocationTableViewCell.xib; sourceTree = "<group>"; };
 		7CDF71281AB4993D002DE182 /* BBSignupEmailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSignupEmailViewController.h; sourceTree = "<group>"; };
 		7CDF71291AB4993D002DE182 /* BBSignupEmailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSignupEmailViewController.m; sourceTree = "<group>"; };
 		7CDF712B1AB4A926002DE182 /* BBPhoneNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBPhoneNumberViewController.h; sourceTree = "<group>"; };
@@ -98,6 +144,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CBAE2E61ABAB8C5006E8D02 /* libsqlite3.dylib in Frameworks */,
+				7CBAE2E41ABAB8B6006E8D02 /* libz.dylib in Frameworks */,
+				7CBAE2E21ABAB8AC006E8D02 /* SystemConfiguration.framework in Frameworks */,
+				7CBAE2E01ABAB8A0006E8D02 /* StoreKit.framework in Frameworks */,
+				7CBAE2DE1ABAB88F006E8D02 /* Social.framework in Frameworks */,
+				7CBAE2DC1ABAB880006E8D02 /* Security.framework in Frameworks */,
+				7CAD86071ABA77D000181F38 /* QuartzCore.framework in Frameworks */,
+				7CBAE2DA1ABAB868006E8D02 /* MobileCoreServices.framework in Frameworks */,
+				7CBAE2D81ABAB85D006E8D02 /* CoreLocation.framework in Frameworks */,
+				7CBAE2D61ABAB852006E8D02 /* CoreGraphics.framework in Frameworks */,
+				7CBAE2D41ABAB844006E8D02 /* CFNetwork.framework in Frameworks */,
+				7CBAE2D21ABAB836006E8D02 /* AudioToolbox.framework in Frameworks */,
+				7CBAE2D01ABAB825006E8D02 /* Accounts.framework in Frameworks */,
 				7CE17E121AB68A5E0095B6E8 /* MapKit.framework in Frameworks */,
 				F0BC1C61D43F6FE5A11A8467 /* libPods-maven.a in Frameworks */,
 			);
@@ -116,6 +175,19 @@
 		1E2608197A6537816A1B5A82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7CBAE2E51ABAB8C5006E8D02 /* libsqlite3.dylib */,
+				7CBAE2E31ABAB8B6006E8D02 /* libz.dylib */,
+				7CBAE2E11ABAB8AC006E8D02 /* SystemConfiguration.framework */,
+				7CBAE2DF1ABAB8A0006E8D02 /* StoreKit.framework */,
+				7CBAE2DD1ABAB88F006E8D02 /* Social.framework */,
+				7CBAE2DB1ABAB880006E8D02 /* Security.framework */,
+				7CBAE2D91ABAB868006E8D02 /* MobileCoreServices.framework */,
+				7CBAE2D71ABAB85D006E8D02 /* CoreLocation.framework */,
+				7CBAE2D51ABAB852006E8D02 /* CoreGraphics.framework */,
+				7CBAE2D31ABAB844006E8D02 /* CFNetwork.framework */,
+				7CBAE2D11ABAB836006E8D02 /* AudioToolbox.framework */,
+				7CBAE2CF1ABAB825006E8D02 /* Accounts.framework */,
+				7CAD86061ABA77D000181F38 /* QuartzCore.framework */,
 				7CE17E111AB68A5E0095B6E8 /* MapKit.framework */,
 				B77DF0137B3AE4C6DDBD0C23 /* libPods-maven.a */,
 			);
@@ -163,12 +235,12 @@
 				7C8D61611AB323D800A3F638 /* Resources */,
 				7C46FA561AB027D40028C255 /* AppDelegate.h */,
 				7C46FA571AB027D40028C255 /* AppDelegate.m */,
-				7C46FA591AB027D40028C255 /* ViewController.h */,
-				7C46FA5A1AB027D40028C255 /* ViewController.m */,
 				7C8D61651AB3530F00A3F638 /* BBHomeViewController.h */,
 				7C8D61661AB3530F00A3F638 /* BBHomeViewController.m */,
 				7CDF71281AB4993D002DE182 /* BBSignupEmailViewController.h */,
 				7CDF71291AB4993D002DE182 /* BBSignupEmailViewController.m */,
+				7CB6EB3B1ABF2C890040AA4B /* BBLoginViewController.h */,
+				7CB6EB3C1ABF2C890040AA4B /* BBLoginViewController.m */,
 				7CDF712B1AB4A926002DE182 /* BBPhoneNumberViewController.h */,
 				7CDF712C1AB4A927002DE182 /* BBPhoneNumberViewController.m */,
 				7C46FA5C1AB027D40028C255 /* Main.storyboard */,
@@ -264,7 +336,11 @@
 		7CAB0BAE1AB58176006AB084 /* EventLocationView */ = {
 			isa = PBXGroup;
 			children = (
-				7CAB0BAF1AB581D9006AB084 /* EventLocationTableCell.xib */,
+				7CBAE2E71ABACFDC006E8D02 /* BBEventLocationTableViewCell.xib */,
+				7C1F2DEF1ABCB31F0036601C /* BBEventLocationTableViewCell.h */,
+				7C1F2DF01ABCB31F0036601C /* BBEventLocationTableViewCell.m */,
+				7C1F2DF51ABCCA400036601C /* BBEventLocationViewController.h */,
+				7C1F2DF61ABCCA400036601C /* BBEventLocationViewController.m */,
 			);
 			name = EventLocationView;
 			sourceTree = "<group>";
@@ -278,6 +354,12 @@
 				7CAB0BB31AB5A20A006AB084 /* BBEditEventLocationViewController.m */,
 				7CAB0BBA1AB5BCE2006AB084 /* BBEventInboxYNViewController.h */,
 				7CAB0BBB1AB5BCE2006AB084 /* BBEventInboxYNViewController.m */,
+				7C05E3D01AB976A400EA3F8B /* BBProfileViewController.h */,
+				7C05E3D11AB976A400EA3F8B /* BBProfileViewController.m */,
+				7C05E3D31AB9969800EA3F8B /* BBMyEventsViewController.h */,
+				7C05E3D41AB9969800EA3F8B /* BBMyEventsViewController.m */,
+				7C05E3D61AB99C5500EA3F8B /* SendFeedbackViewController.h */,
+				7C05E3D71AB99C5500EA3F8B /* SendFeedbackViewController.m */,
 			);
 			name = Panes;
 			sourceTree = "<group>";
@@ -287,6 +369,9 @@
 			children = (
 				7CAB0BB61AB5A3DA006AB084 /* BBSideMenuTableViewController.h */,
 				7CAB0BB71AB5A3DA006AB084 /* BBSideMenuTableViewController.m */,
+				7C05E3D91AB9FCB800EA3F8B /* BBSideMenuTableViewCell.h */,
+				7C05E3DA1AB9FCB800EA3F8B /* BBSideMenuTableViewCell.m */,
+				7C05E3DE1ABA062900EA3F8B /* BBSideMenuTableViewCell.xib */,
 			);
 			name = SideMenu;
 			sourceTree = "<group>";
@@ -385,12 +470,13 @@
 				7CAB0B9C1AB530B5006AB084 /* EventPreviewView.xib in Resources */,
 				7CAB0BA11AB565FD006AB084 /* EventFriendsView.xib in Resources */,
 				7CADAF8A1AB5115B00839643 /* LaunchScreen.xib in Resources */,
+				7C05E3DF1ABA062900EA3F8B /* BBSideMenuTableViewCell.xib in Resources */,
 				7CAB0BAB1AB56BDB006AB084 /* EventInfoTableCell.xib in Resources */,
+				7CBAE2E81ABACFDC006E8D02 /* BBEventLocationTableViewCell.xib in Resources */,
 				7C46FA5E1AB027D40028C255 /* Main.storyboard in Resources */,
 				7C46FA601AB027D40028C255 /* Images.xcassets in Resources */,
 				7C8D61631AB3246100A3F638 /* BEBAS___.TTF in Resources */,
 				7CDF71361AB4FC46002DE182 /* EventPropertyView.xib in Resources */,
-				7CAB0BB01AB581D9006AB084 /* EventLocationTableCell.xib in Resources */,
 				7CAB0BA91AB56BB3006AB084 /* EventFriendsTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,16 +530,22 @@
 			files = (
 				7CAB0B9F1AB541CF006AB084 /* BBEventPreviewView.m in Sources */,
 				7CDF712D1AB4A927002DE182 /* BBPhoneNumberViewController.m in Sources */,
+				7C05E3DB1AB9FCB800EA3F8B /* BBSideMenuTableViewCell.m in Sources */,
 				7CAB0BBC1AB5BCE2006AB084 /* BBEventInboxYNViewController.m in Sources */,
+				7C05E3D51AB9969800EA3F8B /* BBMyEventsViewController.m in Sources */,
 				7CADAF8D1AB5184A00839643 /* BBCreateEventViewController.m in Sources */,
-				7C46FA5B1AB027D40028C255 /* ViewController.m in Sources */,
+				7C05E3D81AB99C5500EA3F8B /* SendFeedbackViewController.m in Sources */,
 				7CDF71341AB4FBBF002DE182 /* BBEventPropertyView.m in Sources */,
+				7C1F2DF11ABCB31F0036601C /* BBEventLocationTableViewCell.m in Sources */,
+				7C1F2DF71ABCCA400036601C /* BBEventLocationViewController.m in Sources */,
 				7CAB0BA71AB56A7C006AB084 /* BBEventFriendsView.m in Sources */,
 				7C8D61671AB3530F00A3F638 /* BBHomeViewController.m in Sources */,
 				7C46FA581AB027D40028C255 /* AppDelegate.m in Sources */,
 				7CAB0BB41AB5A20A006AB084 /* BBEditEventLocationViewController.m in Sources */,
 				7CDF712A1AB4993D002DE182 /* BBSignupEmailViewController.m in Sources */,
+				7C05E3D21AB976A400EA3F8B /* BBProfileViewController.m in Sources */,
 				7C46FA551AB027D40028C255 /* main.m in Sources */,
+				7CB6EB3D1ABF2C890040AA4B /* BBLoginViewController.m in Sources */,
 				7CAB0BB81AB5A3DA006AB084 /* BBSideMenuTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +605,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: AoGe He (G5X48325TH)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -555,6 +648,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: AoGe He (G5X48325TH)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -579,6 +673,10 @@
 			baseConfigurationReference = 7CE5CB8F3CC8FC1F26469954 /* Pods-maven.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = maven/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -590,6 +688,10 @@
 			baseConfigurationReference = A671157E36D5245AFE1441A9 /* Pods-maven.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = maven/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

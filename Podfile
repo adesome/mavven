@@ -3,8 +3,11 @@
 
 target 'maven' do
 
-pod 'QBFlatButton'
-pod 'RKCardView'
+pod 'Parse'
+pod 'ParseFacebookUtils'
+pod 'ParseCrashReporting'
+pod 'ParseUI'
+pod 'PPiAwesomeButton'
 pod 'MSDynamicsDrawerViewController'
 
 end
