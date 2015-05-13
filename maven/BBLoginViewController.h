@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 #import <FBLoginView.h>
 
-@interface BBLoginViewController : UIViewController
+@class MSDynamicsDrawerViewController;
+
+@interface BBLoginViewController : UIViewController<FBLoginViewDelegate>
+
+@property (strong, nonatomic) MSDynamicsDrawerViewController *dynamicsDrawerViewController;
 
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
-@property (weak, nonatomic) IBOutlet FBLoginView *facebookLoginButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 - (IBAction)backButtonAction:(id)sender;
 

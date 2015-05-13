@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-maven-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-maven-MSDynamicsDrawerViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1A0A872B150CEA89448F6698</key>
+		<key>425FEC0E219585D20A8D6AA1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>461CA8765B3D944D4D8AA2F7</key>
+		<key>63DED1A632966A8E33405D46</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5F20CE2BF6591BB1F514984E</key>
+		<key>6CA31CF6C1E1DC1D51885F13</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83663655B23D68F4D840A321</key>
+		<key>9F997CCC34627C5DB3912BC5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A3E46089968F2AD88CAFF2A</key>
+		<key>A1CFCFE06680CD9BFA8F5BD8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BDB39E3F274D39CD307BD7B7</key>
+		<key>CB8F40346624288E224A9450</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D08C25D4658DBFC2DFA84A34</key>
+		<key>D0D5519BA1C3D129146B6CCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E75E41D3AEF0BCFF16D6E300</key>
 		<dict>
 			<key>primary</key>
 			<true/>

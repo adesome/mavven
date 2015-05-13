@@ -11,5 +11,13 @@
 
 #define GOOLGE_MAP_API              @"http://maps.google.com/maps/api/geocode/json?address="
 
+#pragma mark - PFObject User Class
+// Field keys
+extern NSString *const kMAVENUserDisplayNameKey;
+extern NSString *const kMAVENUserFacebookIDKey;
+extern NSString *const kMAVENUserProfilePicSmallKey;
+extern NSString *const kMAVENUserProfilePicMediumKey;
+extern NSString *const kMAVENUserEmailKey;
+
 
 #endif

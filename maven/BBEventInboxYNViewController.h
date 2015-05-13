@@ -10,4 +10,9 @@
 
 @interface BBEventInboxYNViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *yesButton;
+@property (weak, nonatomic) IBOutlet UIButton *noButton;
+
+- (IBAction)yesButtonSelected:(id)sender;
+- (IBAction)noButtonSelected:(id)sender;
 @end

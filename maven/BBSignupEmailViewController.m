@@ -102,7 +102,13 @@
         return;
     }
     
+    // Goto the phone number page
     BBPhoneNumberViewController * phoneNumberViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"phoneNumberViewControllerID"];
+    
+    phoneNumberViewController.fullname = fullnameString;
+    phoneNumberViewController.email = emailString;
+    phoneNumberViewController.password = passwordString;
+    
     [self.navigationController pushViewController:phoneNumberViewController animated:YES];
     
 }

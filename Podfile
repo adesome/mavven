@@ -9,6 +9,7 @@ pod 'ParseCrashReporting'
 pod 'ParseUI'
 pod 'PPiAwesomeButton'
 pod 'MSDynamicsDrawerViewController'
+pod 'MBProgressHUD'
 
 end
 

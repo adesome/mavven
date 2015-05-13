@@ -15,8 +15,13 @@
 @property (strong, nonatomic) MSDynamicsDrawerViewController *dynamicsDrawerViewController;
 
 @property (weak, nonatomic) IBOutlet UITextField *phonenumberTextField;
+@property (weak, nonatomic) IBOutlet UIButton *continueButton;
 
 - (IBAction)backButtonAction:(id)sender;
 - (IBAction)continueButtonAction:(id)sender;
+
+@property (strong, nonatomic) NSString * fullname;
+@property (strong, nonatomic) NSString * email;
+@property (strong, nonatomic) NSString * password;
 
 @end

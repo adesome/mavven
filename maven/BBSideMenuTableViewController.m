@@ -13,6 +13,8 @@
 
 #import "BBSideMenuTableViewCell.h"
 
+#import <Parse.h>
+
 NSString * const BBSideMenuTableCellReuseIdentifier = @"sideMenuTableViewCellID";
 
 @interface BBSideMenuTableViewController ()
@@ -280,6 +282,10 @@ NSString * const BBSideMenuTableCellReuseIdentifier = @"sideMenuTableViewCellID"
     if (paneViewControllerType == BBPaneViewControllerTypeLogout) {
         
         // Logout
+        [PFUser logOut];
+        
+        // Dismiss
+        [self.dynamicsDrawerViewController dismissViewControllerAnimated:YES completion:nil];
     }
     else {
         [self transitionToViewController:paneViewControllerType];

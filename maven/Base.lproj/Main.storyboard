@@ -63,36 +63,39 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-character" translatesAutoresizingMaskIntoConstraints="NO" id="TLP-YW-Pam">
-                                <rect key="frame" x="210" y="28" width="110" height="456"/>
+                                <rect key="frame" x="210" y="28" width="110" height="436"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="110" id="h8B-b6-pD2"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2g-vW-elM">
-                                <rect key="frame" x="173" y="492" width="121" height="50"/>
-                                <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="deviceRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2g-vW-elM">
+                                <rect key="frame" x="173" y="518" width="134" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bZp-a1-mwF"/>
                                 </constraints>
                                 <state key="normal" title="Signup">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="signupButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ASE-N4-jun"/>
                                     <segue destination="IoE-L6-CGk" kind="show" id="YRs-8L-BPQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0k-YM-CxS">
-                                <rect key="frame" x="26" y="492" width="121" height="50"/>
-                                <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="deviceRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ky6-ZO-f7S" customClass="FBLoginView">
+                                <rect key="frame" x="13" y="468" width="294" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cKb-R1-Djp"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0k-YM-CxS">
+                                <rect key="frame" x="13" y="518" width="134" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="1X7-2L-lOK"/>
                                     <constraint firstAttribute="height" constant="50" id="Wri-pR-vvG"/>
                                 </constraints>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="loginButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="czY-Hs-66Q"/>
@@ -102,15 +105,18 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.83529411760000005" blue="0.89411764709999997" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="r2g-vW-elM" secondAttribute="trailing" constant="26" id="1yz-pf-hjZ"/>
+                            <constraint firstAttribute="trailing" secondItem="r2g-vW-elM" secondAttribute="trailing" constant="13" id="1yz-pf-hjZ"/>
+                            <constraint firstAttribute="trailing" secondItem="ky6-ZO-f7S" secondAttribute="trailing" constant="13" id="9Ba-39-Guz"/>
                             <constraint firstItem="XUo-nb-hKR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="EpJ-xz-Uty"/>
-                            <constraint firstItem="U0k-YM-CxS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="Gva-BJ-COU"/>
+                            <constraint firstItem="U0k-YM-CxS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="13" id="Gva-BJ-COU"/>
                             <constraint firstItem="r2g-vW-elM" firstAttribute="baseline" secondItem="U0k-YM-CxS" secondAttribute="baseline" id="IUd-8Y-t4d"/>
+                            <constraint firstItem="U0k-YM-CxS" firstAttribute="top" secondItem="ky6-ZO-f7S" secondAttribute="bottom" id="Py8-rp-28q"/>
+                            <constraint firstItem="ky6-ZO-f7S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="13" id="UtR-zQ-jtl"/>
                             <constraint firstItem="qBh-VU-eXo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="WHv-G3-0iw"/>
                             <constraint firstItem="qBh-VU-eXo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="26" id="Zrc-mR-rhb"/>
                             <constraint firstAttribute="trailing" secondItem="TLP-YW-Pam" secondAttribute="trailing" id="cvz-2H-7hV"/>
-                            <constraint firstAttribute="bottom" secondItem="U0k-YM-CxS" secondAttribute="bottom" constant="26" id="czb-b4-B0B"/>
-                            <constraint firstAttribute="bottom" secondItem="TLP-YW-Pam" secondAttribute="bottom" constant="84" id="fas-s0-zmr"/>
+                            <constraint firstAttribute="bottom" secondItem="U0k-YM-CxS" secondAttribute="bottom" id="czb-b4-B0B"/>
+                            <constraint firstAttribute="bottom" secondItem="TLP-YW-Pam" secondAttribute="bottom" constant="104" id="fas-s0-zmr"/>
                             <constraint firstItem="r2g-vW-elM" firstAttribute="leading" secondItem="U0k-YM-CxS" secondAttribute="trailing" constant="26" id="mGG-q4-cS6"/>
                             <constraint firstItem="r2g-vW-elM" firstAttribute="width" secondItem="U0k-YM-CxS" secondAttribute="width" id="pXR-RT-und"/>
                             <constraint firstItem="TLP-YW-Pam" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="sg5-RL-WFp"/>
@@ -121,6 +127,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="facebookLoginButton" destination="ky6-ZO-f7S" id="N1f-08-r7z"/>
                         <outlet property="loginButton" destination="U0k-YM-CxS" id="aHM-pE-r1u"/>
                         <outlet property="signupButton" destination="r2g-vW-elM" id="WNs-gQ-Gne"/>
                     </connections>
@@ -726,15 +733,14 @@
                                     <constraint firstAttribute="height" constant="40" id="mbY-a9-3Mk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA3-vd-mS5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yA3-vd-mS5">
                                 <rect key="frame" x="13" y="223" width="294" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.83529411760000005" blue="0.89411764709999997" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="gIw-7A-fht"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -743,32 +749,13 @@
                                     <action selector="loginButtonSelected:" destination="PW9-h5-Vip" eventType="touchUpInside" id="U98-qg-tNx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H1-3U-oId">
-                                <rect key="frame" x="13" y="291" width="294" height="10"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="10" id="Od4-os-M5u"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ej4-s5-Imw" customClass="FBLoginView">
-                                <rect key="frame" x="13" y="319" width="294" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="MyN-hN-XnI"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="rp0-qJ-yKJ" firstAttribute="leading" secondItem="mVR-xC-3Oz" secondAttribute="leading" constant="13" id="7ym-hW-clJ"/>
                             <constraint firstItem="E2b-LH-luT" firstAttribute="leading" secondItem="mVR-xC-3Oz" secondAttribute="leading" constant="13" id="8Jh-QF-cv5"/>
-                            <constraint firstItem="5H1-3U-oId" firstAttribute="leading" secondItem="mVR-xC-3Oz" secondAttribute="leading" constant="13" id="9RJ-Yh-jhM"/>
                             <constraint firstAttribute="trailing" secondItem="8fJ-tw-Nan" secondAttribute="trailing" constant="13" id="A31-9x-pkS"/>
-                            <constraint firstItem="ej4-s5-Imw" firstAttribute="top" secondItem="5H1-3U-oId" secondAttribute="bottom" constant="18" id="AeW-3z-Plt"/>
                             <constraint firstAttribute="trailing" secondItem="WN2-u8-64h" secondAttribute="trailing" constant="13" id="BNs-Ab-PgQ"/>
-                            <constraint firstAttribute="trailing" secondItem="5H1-3U-oId" secondAttribute="trailing" constant="13" id="C0t-Ec-R2m"/>
                             <constraint firstItem="8fJ-tw-Nan" firstAttribute="top" secondItem="E2b-LH-luT" secondAttribute="bottom" constant="18" id="F9p-ki-ebi"/>
                             <constraint firstItem="rp0-qJ-yKJ" firstAttribute="top" secondItem="DdH-le-fCA" secondAttribute="bottom" constant="18" id="HQH-TK-5kr"/>
                             <constraint firstAttribute="trailing" secondItem="yA3-vd-mS5" secondAttribute="trailing" constant="13" id="Jit-MR-0Ot"/>
@@ -776,11 +763,8 @@
                             <constraint firstAttribute="trailing" secondItem="rp0-qJ-yKJ" secondAttribute="trailing" constant="13" id="Xpi-1o-iJI"/>
                             <constraint firstItem="WN2-u8-64h" firstAttribute="top" secondItem="8fJ-tw-Nan" secondAttribute="bottom" constant="5" id="Zvh-GC-b2A"/>
                             <constraint firstItem="E2b-LH-luT" firstAttribute="top" secondItem="rp0-qJ-yKJ" secondAttribute="bottom" constant="5" id="aBV-2X-3Cl"/>
-                            <constraint firstItem="ej4-s5-Imw" firstAttribute="leading" secondItem="mVR-xC-3Oz" secondAttribute="leading" constant="13" id="cq6-3v-AQc"/>
                             <constraint firstItem="yA3-vd-mS5" firstAttribute="leading" secondItem="mVR-xC-3Oz" secondAttribute="leading" constant="13" id="fzx-4M-f2G"/>
-                            <constraint firstItem="5H1-3U-oId" firstAttribute="top" secondItem="yA3-vd-mS5" secondAttribute="bottom" constant="18" id="h7m-DU-zLA"/>
                             <constraint firstItem="8fJ-tw-Nan" firstAttribute="leading" secondItem="mVR-xC-3Oz" secondAttribute="leading" constant="13" id="kPi-Pj-6TJ"/>
-                            <constraint firstAttribute="trailing" secondItem="ej4-s5-Imw" secondAttribute="trailing" constant="13" id="pcz-7J-XRK"/>
                             <constraint firstAttribute="trailing" secondItem="E2b-LH-luT" secondAttribute="trailing" constant="13" id="rQK-us-ONV"/>
                             <constraint firstItem="WN2-u8-64h" firstAttribute="leading" secondItem="mVR-xC-3Oz" secondAttribute="leading" constant="13" id="vdZ-7e-j4b"/>
                         </constraints>
@@ -797,7 +781,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="emailTextField" destination="E2b-LH-luT" id="ZNs-xs-vrV"/>
-                        <outlet property="facebookLoginButton" destination="ej4-s5-Imw" id="BiT-96-hGV"/>
+                        <outlet property="loginButton" destination="yA3-vd-mS5" id="BXT-YH-BYe"/>
                         <outlet property="passwordTextField" destination="WN2-u8-64h" id="s39-an-Tl2"/>
                     </connections>
                 </viewController>
@@ -927,27 +911,31 @@
                                     <constraint firstAttribute="trailing" secondItem="t2j-yR-VdY" secondAttribute="trailing" id="xn0-G9-cIn"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cl-Uc-uzu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cl-Uc-uzu">
                                 <rect key="frame" x="168" y="498" width="137" height="50"/>
                                 <color key="backgroundColor" red="0.99215686274509807" green="0.47843137254901957" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Can't make it">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="noButtonSelected:" destination="Y7e-c2-bXX" eventType="touchUpInside" id="vJg-3x-Eot"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oK-yJ-N5O">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oK-yJ-N5O">
                                 <rect key="frame" x="15" y="498" width="138" height="50"/>
                                 <color key="backgroundColor" red="0.38039215686274508" green="0.80000000000000004" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ADe-fo-SjV"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="rio-gr-3ak"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Yes, I'm going">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="yesButtonSelected:" destination="Y7e-c2-bXX" eventType="touchUpInside" id="i3N-sk-Cfj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -968,6 +956,10 @@
                     <navigationItem key="navigationItem" title="Event Inbox" id="Bea-0M-9Kj"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="noButton" destination="6cl-Uc-uzu" id="qiE-so-Otg"/>
+                        <outlet property="yesButton" destination="0oK-yJ-N5O" id="sSi-0v-zPO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rei-IA-yEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1041,6 +1033,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="continueButton" destination="D7I-Vv-XWl" id="cFG-IQ-u2w"/>
                         <outlet property="phonenumberTextField" destination="rc9-29-C6h" id="KTH-bo-sFV"/>
                     </connections>
                 </viewController>

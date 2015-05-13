@@ -21,12 +21,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    // ****************************************************************************
+    // Parse initialization
     [Parse setApplicationId:@"Cww10fgpaiVuoaFTFP5u6cWxtCMevmeTfcXvM0ER"
                   clientKey:@"tPA9tODRDVAgT0drwnusegiJpSrPzGHiinMcjzl3"];
     [PFFacebookUtils initializeFacebook];
+    // ****************************************************************************
     
     // Override point for customization after application launch.
-    [FBLoginView class];
     
     return YES;
 }

@@ -50,8 +50,8 @@
                 <constraints>
                     <constraint firstItem="4Br-m7-wOl" firstAttribute="leading" secondItem="MON-vc-xOc" secondAttribute="trailing" constant="8" id="2sh-pG-D29"/>
                     <constraint firstItem="HL0-ck-AxI" firstAttribute="top" secondItem="F4g-23-NJJ" secondAttribute="top" constant="-3" id="A9n-Rm-HqE"/>
+                    <constraint firstItem="F4g-23-NJJ" firstAttribute="leading" secondItem="EzK-ug-5Wu" secondAttribute="leading" constant="231" id="EKU-RX-ldg"/>
                     <constraint firstItem="MON-vc-xOc" firstAttribute="leading" secondItem="EzK-ug-5Wu" secondAttribute="leading" constant="16" id="Jwr-Cl-LVx"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="F4g-23-NJJ" secondAttribute="trailing" constant="65" id="Kmk-zE-Lu4"/>
                     <constraint firstItem="HL0-ck-AxI" firstAttribute="trailing" secondItem="F4g-23-NJJ" secondAttribute="trailing" constant="2" id="RuO-dC-dPF"/>
                     <constraint firstItem="4Br-m7-wOl" firstAttribute="top" secondItem="EzK-ug-5Wu" secondAttribute="top" constant="13" id="deU-Rd-wGv"/>
                     <constraint firstItem="HL0-ck-AxI" firstAttribute="bottom" secondItem="F4g-23-NJJ" secondAttribute="bottom" constant="3" id="neo-MP-jVl"/>

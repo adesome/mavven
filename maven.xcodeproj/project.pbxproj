@@ -12,6 +12,12 @@
 		7C05E3D81AB99C5500EA3F8B /* SendFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C05E3D71AB99C5500EA3F8B /* SendFeedbackViewController.m */; };
 		7C05E3DB1AB9FCB800EA3F8B /* BBSideMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C05E3DA1AB9FCB800EA3F8B /* BBSideMenuTableViewCell.m */; };
 		7C05E3DF1ABA062900EA3F8B /* BBSideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C05E3DE1ABA062900EA3F8B /* BBSideMenuTableViewCell.xib */; };
+		7C0A52AA1ACB39EA00C4DBE4 /* BBUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0A52A91ACB39EA00C4DBE4 /* BBUtility.m */; };
+		7C0A52B51ACB430E00C4DBE4 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0A52AF1ACB430E00C4DBE4 /* UIImage+AlphaAdditions.m */; };
+		7C0A52B61ACB430E00C4DBE4 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0A52B11ACB430E00C4DBE4 /* UIImage+ResizeAdditions.m */; };
+		7C0A52B71ACB430E00C4DBE4 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0A52B31ACB430E00C4DBE4 /* UIImage+RoundedCornerAdditions.m */; };
+		7C0A52B91ACB497C00C4DBE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0A52B81ACB497C00C4DBE4 /* UIKit.framework */; };
+		7C0A52BB1ACB5EEC00C4DBE4 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0A52BA1ACB5EEC00C4DBE4 /* Constant.m */; };
 		7C1F2DF11ABCB31F0036601C /* BBEventLocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1F2DF01ABCB31F0036601C /* BBEventLocationTableViewCell.m */; };
 		7C1F2DF71ABCCA400036601C /* BBEventLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1F2DF61ABCCA400036601C /* BBEventLocationViewController.m */; };
 		7C46FA551AB027D40028C255 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C46FA541AB027D40028C255 /* main.m */; };
@@ -75,6 +81,16 @@
 		7C05E3D91AB9FCB800EA3F8B /* BBSideMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSideMenuTableViewCell.h; sourceTree = "<group>"; };
 		7C05E3DA1AB9FCB800EA3F8B /* BBSideMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSideMenuTableViewCell.m; sourceTree = "<group>"; };
 		7C05E3DE1ABA062900EA3F8B /* BBSideMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BBSideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		7C0A52A81ACB39EA00C4DBE4 /* BBUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUtility.h; sourceTree = "<group>"; };
+		7C0A52A91ACB39EA00C4DBE4 /* BBUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUtility.m; sourceTree = "<group>"; };
+		7C0A52AE1ACB430E00C4DBE4 /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
+		7C0A52AF1ACB430E00C4DBE4 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
+		7C0A52B01ACB430E00C4DBE4 /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeAdditions.h"; sourceTree = "<group>"; };
+		7C0A52B11ACB430E00C4DBE4 /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
+		7C0A52B21ACB430E00C4DBE4 /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCornerAdditions.h"; sourceTree = "<group>"; };
+		7C0A52B31ACB430E00C4DBE4 /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
+		7C0A52B81ACB497C00C4DBE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7C0A52BA1ACB5EEC00C4DBE4 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
 		7C1F2DEF1ABCB31F0036601C /* BBEventLocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEventLocationTableViewCell.h; sourceTree = "<group>"; };
 		7C1F2DF01ABCB31F0036601C /* BBEventLocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBEventLocationTableViewCell.m; sourceTree = "<group>"; };
 		7C1F2DF51ABCCA400036601C /* BBEventLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBEventLocationViewController.h; sourceTree = "<group>"; };
@@ -144,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C0A52B91ACB497C00C4DBE4 /* UIKit.framework in Frameworks */,
 				7CBAE2E61ABAB8C5006E8D02 /* libsqlite3.dylib in Frameworks */,
 				7CBAE2E41ABAB8B6006E8D02 /* libz.dylib in Frameworks */,
 				7CBAE2E21ABAB8AC006E8D02 /* SystemConfiguration.framework in Frameworks */,
@@ -175,6 +192,7 @@
 		1E2608197A6537816A1B5A82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C0A52B81ACB497C00C4DBE4 /* UIKit.framework */,
 				7CBAE2E51ABAB8C5006E8D02 /* libsqlite3.dylib */,
 				7CBAE2E31ABAB8B6006E8D02 /* libz.dylib */,
 				7CBAE2E11ABAB8AC006E8D02 /* SystemConfiguration.framework */,
@@ -203,6 +221,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7C0A52AB1ACB42F500C4DBE4 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				7C0A52AE1ACB430E00C4DBE4 /* UIImage+AlphaAdditions.h */,
+				7C0A52AF1ACB430E00C4DBE4 /* UIImage+AlphaAdditions.m */,
+				7C0A52B01ACB430E00C4DBE4 /* UIImage+ResizeAdditions.h */,
+				7C0A52B11ACB430E00C4DBE4 /* UIImage+ResizeAdditions.m */,
+				7C0A52B21ACB430E00C4DBE4 /* UIImage+RoundedCornerAdditions.h */,
+				7C0A52B31ACB430E00C4DBE4 /* UIImage+RoundedCornerAdditions.m */,
+			);
+			name = UIImage;
+			sourceTree = "<group>";
+		};
 		7C46FA461AB027D40028C255 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +257,7 @@
 		7C46FA511AB027D40028C255 /* maven */ = {
 			isa = PBXGroup;
 			children = (
+				7C0A52AB1ACB42F500C4DBE4 /* UIImage */,
 				7CAB0BB91AB5A4AC006AB084 /* SideMenuPanes */,
 				7CAB0BAC1AB57F37006AB084 /* Global */,
 				7CAB0BAE1AB58176006AB084 /* EventLocationView */,
@@ -235,6 +267,8 @@
 				7C8D61611AB323D800A3F638 /* Resources */,
 				7C46FA561AB027D40028C255 /* AppDelegate.h */,
 				7C46FA571AB027D40028C255 /* AppDelegate.m */,
+				7CADAF8B1AB5184A00839643 /* BBCreateEventViewController.h */,
+				7CADAF8C1AB5184A00839643 /* BBCreateEventViewController.m */,
 				7C8D61651AB3530F00A3F638 /* BBHomeViewController.h */,
 				7C8D61661AB3530F00A3F638 /* BBHomeViewController.m */,
 				7CDF71281AB4993D002DE182 /* BBSignupEmailViewController.h */,
@@ -243,6 +277,8 @@
 				7CB6EB3C1ABF2C890040AA4B /* BBLoginViewController.m */,
 				7CDF712B1AB4A926002DE182 /* BBPhoneNumberViewController.h */,
 				7CDF712C1AB4A927002DE182 /* BBPhoneNumberViewController.m */,
+				7C0A52A81ACB39EA00C4DBE4 /* BBUtility.h */,
+				7C0A52A91ACB39EA00C4DBE4 /* BBUtility.m */,
 				7C46FA5C1AB027D40028C255 /* Main.storyboard */,
 				7CADAF881AB5115B00839643 /* LaunchScreen.xib */,
 				7C46FA521AB027D40028C255 /* Supporting Files */,
@@ -329,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				7CAB0BAD1AB57F8F006AB084 /* Constant.h */,
+				7C0A52BA1ACB5EEC00C4DBE4 /* Constant.m */,
 			);
 			name = Global;
 			sourceTree = "<group>";
@@ -348,8 +385,6 @@
 		7CAB0BB11AB596AA006AB084 /* Panes */ = {
 			isa = PBXGroup;
 			children = (
-				7CADAF8B1AB5184A00839643 /* BBCreateEventViewController.h */,
-				7CADAF8C1AB5184A00839643 /* BBCreateEventViewController.m */,
 				7CAB0BB21AB5A20A006AB084 /* BBEditEventLocationViewController.h */,
 				7CAB0BB31AB5A20A006AB084 /* BBEditEventLocationViewController.m */,
 				7CAB0BBA1AB5BCE2006AB084 /* BBEventInboxYNViewController.h */,
@@ -528,13 +563,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C0A52B71ACB430E00C4DBE4 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				7CAB0B9F1AB541CF006AB084 /* BBEventPreviewView.m in Sources */,
 				7CDF712D1AB4A927002DE182 /* BBPhoneNumberViewController.m in Sources */,
+				7C0A52B51ACB430E00C4DBE4 /* UIImage+AlphaAdditions.m in Sources */,
 				7C05E3DB1AB9FCB800EA3F8B /* BBSideMenuTableViewCell.m in Sources */,
 				7CAB0BBC1AB5BCE2006AB084 /* BBEventInboxYNViewController.m in Sources */,
 				7C05E3D51AB9969800EA3F8B /* BBMyEventsViewController.m in Sources */,
+				7C0A52BB1ACB5EEC00C4DBE4 /* Constant.m in Sources */,
 				7CADAF8D1AB5184A00839643 /* BBCreateEventViewController.m in Sources */,
 				7C05E3D81AB99C5500EA3F8B /* SendFeedbackViewController.m in Sources */,
+				7C0A52B61ACB430E00C4DBE4 /* UIImage+ResizeAdditions.m in Sources */,
 				7CDF71341AB4FBBF002DE182 /* BBEventPropertyView.m in Sources */,
 				7C1F2DF11ABCB31F0036601C /* BBEventLocationTableViewCell.m in Sources */,
 				7C1F2DF71ABCCA400036601C /* BBEventLocationViewController.m in Sources */,
@@ -546,6 +585,7 @@
 				7C05E3D21AB976A400EA3F8B /* BBProfileViewController.m in Sources */,
 				7C46FA551AB027D40028C255 /* main.m in Sources */,
 				7CB6EB3D1ABF2C890040AA4B /* BBLoginViewController.m in Sources */,
+				7C0A52AA1ACB39EA00C4DBE4 /* BBUtility.m in Sources */,
 				7CAB0BB81AB5A3DA006AB084 /* BBSideMenuTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

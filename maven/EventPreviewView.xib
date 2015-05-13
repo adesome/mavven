@@ -120,6 +120,9 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mapView" destination="NOm-I7-V9E" id="3Kn-6s-J20"/>
+            </connections>
             <point key="canvasLocation" x="263" y="194.5"/>
         </view>
     </objects>

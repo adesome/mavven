@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface BBEventPreviewView : UIView
+@interface BBEventPreviewView : UIView<MKMapViewDelegate, CLLocationManagerDelegate>
+{
+    CLLocationManager *locationManager;
+}
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

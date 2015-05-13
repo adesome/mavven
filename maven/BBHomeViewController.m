@@ -7,11 +7,25 @@
 //
 
 #import "BBHomeViewController.h"
+#import "BBPhoneNumberViewController.h"
+
 #import "UIButton+PPiAwesome.h"
 #import "UIAwesomeButton.h"
+
+#import "MBProgressHUD.h"
+
 #import <Parse/Parse.h>
+#import <ParseFacebookUtils/PFFacebookUtils.h>
 
 @interface BBHomeViewController ()
+{
+    FBLoginView *_facebookLoginView;
+}
+@end
+
+@interface FBSession (Private)
+
+- (void)clearAffinitizedThread;
 
 @end
 
@@ -21,71 +35,10 @@
     [super viewDidLoad];
     
     // Button
-    [self.loginButton setIsAwesome:YES];
-    [self.loginButton setButtonText:@"Login"];
-    [self.loginButton setTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15], NSForegroundColorAttributeName:[UIColor whiteColor]} forUIControlState:UIControlStateNormal];
-    [self.loginButton setRadius:2.0];
-    [self.loginButton setBackgroundColor:[UIColor colorWithRed:9.0f/255 green:180.0f/255 blue:144.0f/255 alpha:1.0] forUIControlState:UIControlStateNormal];
-    [self.loginButton setBackgroundColor:[UIColor colorWithRed:37.0f/255 green:105.0f/255 blue:90.0f/255 alpha:1.0] forUIControlState:UIControlStateHighlighted];
-    
-    [self.signupButton setIsAwesome:YES];
-    [self.signupButton setButtonText:@"Singup"];
-    [self.signupButton setTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15], NSForegroundColorAttributeName:[UIColor whiteColor]} forUIControlState:UIControlStateNormal];
-    [self.signupButton setRadius:2.0];
-    [self.signupButton setBackgroundColor:[UIColor colorWithRed:9.0f/255 green:180.0f/255 blue:144.0f/255 alpha:1.0] forUIControlState:UIControlStateNormal];
-    [self.signupButton setBackgroundColor:[UIColor colorWithRed:37.0f/255 green:105.0f/255 blue:90.0f/255 alpha:1.0] forUIControlState:UIControlStateHighlighted];
-    
-    
-    
-    PFUser *user = [PFUser user];
-    user.username = @"my name";
-    user.password = @"my pass";
-    user.email = @"email@example.com";
-  
-    
-    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
-            // Hooray! Let them use the app now.
-            NSLog(@"success");
-        } else {
-            NSString *errorString = [error userInfo][@"error"];
-            // Show the errorString somewhere and let the user try again.
-            NSLog(@"%@", errorString);
-        }
-    }];
-    
-    
-    // Do any additional setup after loading the view.
-    /*
-    
-    self.facebookLoginButton.sideColor = [UIColor colorWithRed:(59.0f/255.0f) green:(89.0f/255.0f) blue:(152.0f/255.0f) alpha:1.0];
-    self.facebookLoginButton.faceColor = [UIColor colorWithRed:(59.0f/255.0f) green:(89.0f/255.0f) blue:(152.0f/255.0f) alpha:1.0];
-    self.facebookLoginButton.borderColor = [UIColor colorWithRed:(59.0f/255.0f) green:(89.0f/255.0f) blue:(152.0f/255.0f) alpha:1.0];
-    
-    self.facebookLoginButton.radius = 4;
-    self.facebookLoginButton.depth = 1;
-    self.facebookLoginButton.margin = 1;
-    self.facebookLoginButton.borderWidth = 0;
-    
-    */
-    /*
-    [_facebookLoginButton setFaceColor:[UIColor colorWithRed:(59.0f/255.0f) green:(89.0f/255.0f) blue:(152.0f/255.0f) alpha:1.0] forState:UIControlStateNormal];
-    [_facebookLoginButton setFaceColor:[UIColor colorWithRed:(70.0f/255.0f) green:(89.0f/255.0f) blue:(180.0f/255.0f) alpha:1.0] forState:UIControlStateHighlighted];
-    
-    self.facebookLoginButton.depth = 0;
-    self.facebookLoginButton.margin = 0;
-    */
-    //self.facebookLoginButton.faceColor = [UIColor colorWithRed:(59.0f/255.0f) green:(89.0f/255.0f) blue:(152.0f/255.0f) alpha:1.0];
-    //self.facebookLoginButton.faceColor = [UIColor colorWithRed:(59.0f/255.0f) green:(89.0f/255.0f) blue:(152.0f/255.0f) alpha:1.0];
-    
-    
-    // Tap gesture recognizer for facebookLogin view
-    //UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(facebookLoginViewTapped:)];
-    /*
-    [self.facebookLoginView addGestureRecognizer:tapGestureRecognizer];
-    self.facebookLoginView.userInteractionEnabled = YES;
-    
-    */
+    self.facebookLoginButton.readPermissions = @[@"public_profile", @"email", @"user_friends"];
+    self.facebookLoginButton.delegate = self;
+    self.facebookLoginButton.tooltipBehavior = FBLoginViewTooltipBehaviorDisable;
+   
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -110,10 +63,6 @@
 }
 */
 
-- (void)facebookLoginViewTapped:(UITapGestureRecognizer*)gestureRecognizer {
-    NSLog(@"facebookLoginViewTapped");
-}
-
 - (IBAction)loginButtonSelected:(id)sender {
 
 }
@@ -121,4 +70,125 @@
 - (IBAction)signupButtonSelected:(id)sender {
  
 }
+
+#pragma mark - FBLoginViewDelegate
+
+- (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
+    [self handleFacebookSession];
+}
+
+- (void)loginView:(FBLoginView *)loginView handleError:(NSError *)error {
+    [self handleLogInError:error];
+}
+
+- (void)handleFacebookSession {
+    
+    if ([PFUser currentUser]) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(logInViewControllerDidLogUserIn:)]) {
+            [self.delegate performSelector:@selector(logInViewControllerDidLogUserIn:) withObject:[PFUser currentUser]];
+        }
+        return;
+    }
+    
+    NSString *accessToken = [[[FBSession activeSession] accessTokenData] accessToken];
+    NSDate *expirationDate = [[[FBSession activeSession] accessTokenData] expirationDate];
+    NSString *facebookUserId = [[[FBSession activeSession] accessTokenData] userID];
+    
+    if (!accessToken || !facebookUserId) {
+        NSLog(@"Login failure. FB Access Token or user ID does not exist");
+        return;
+    }
+    
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    hud.labelText = @"Loading";
+    [hud show:YES];
+    
+    
+    // Unfortunately there are some issues with accessing the session provided from FBLoginView with the Parse SDK's (thread affinity)
+    // Just work around this by setting the session to nil, since the relevant values will be discarded anyway when linking with Parse (permissions flag on FBAccessTokenData)
+    // that we need to get back again with a refresh of the session
+    if ([[FBSession activeSession] respondsToSelector:@selector(clearAffinitizedThread)]) {
+        [[FBSession activeSession] performSelector:@selector(clearAffinitizedThread)];
+    }
+    
+    [PFFacebookUtils logInWithFacebookId:facebookUserId
+                             accessToken:accessToken
+                          expirationDate:expirationDate
+                                   block:^(PFUser *user, NSError *error) {
+                                       
+                                       [hud hide:YES];
+                                       
+                                       if (!error) {
+                                           
+                                           if (self.delegate) {
+                                               if ([self.delegate respondsToSelector:@selector(logInViewControllerDidLogUserIn:)]) {
+                                                   [self.delegate performSelector:@selector(logInViewControllerDidLogUserIn:) withObject:user];
+                                               }
+                                           }
+                                           
+                                           // Goto the phone number page
+                                           BBPhoneNumberViewController * phoneNumberViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"phoneNumberViewControllerID"];
+                                           
+                                           [self.navigationController pushViewController:phoneNumberViewController animated:YES];
+                                           
+                                       } else {
+                                           
+                                           [self cancelLogIn:error];
+                                       }
+                                   }];
+}
+
+#pragma mark - (Login Error)
+
+- (void)cancelLogIn:(NSError *)error {
+    
+    if (error) {
+        [self handleLogInError:error];
+    }
+    
+    [[FBSession activeSession] closeAndClearTokenInformation];
+    [PFUser logOut];
+}
+
+- (void)handleLogInError:(NSError *)error {
+    if (error) {
+        NSLog(@"Error: %@", [[error userInfo] objectForKey:@"com.facebook.sdk:ErrorLoginFailedReason"]);
+        NSString *title = NSLocalizedString(@"Login Error", @"Login error title in PAPLogInViewController");
+        NSString *message = NSLocalizedString(@"Something went wrong. Please try again.", @"Login error message in PAPLogInViewController");
+        
+        if ([[[error userInfo] objectForKey:@"com.facebook.sdk:ErrorLoginFailedReason"] isEqualToString:@"com.facebook.sdk:UserLoginCancelled"]) {
+            return;
+        }
+        
+        if (error.code == kPFErrorFacebookInvalidSession) {
+            NSLog(@"Invalid session, logging out.");
+            [[FBSession activeSession] closeAndClearTokenInformation];
+            return;
+        }
+        
+        if (error.code == kPFErrorConnectionFailed) {
+            NSString *ok = NSLocalizedString(@"OK", @"OK");
+            NSString *title = NSLocalizedString(@"Offline Error", @"Offline Error");
+            NSString *message = NSLocalizedString(@"Something went wrong. Please try again.", @"Offline message");
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                            message:message
+                                                           delegate:nil
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:ok, nil];
+            [alert show];
+            
+            return;
+        }
+        
+        NSString *ok = NSLocalizedString(@"OK", @"OK");
+        
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
+                                                            message:message
+                                                           delegate:self
+                                                  cancelButtonTitle:nil
+                                                  otherButtonTitles:ok, nil];
+        [alertView show];
+    }
+}
+
 @end

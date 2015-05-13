@@ -3,6 +3,7 @@ PODS:
   - Facebook-iOS-SDK (3.23.1):
     - Bolts (~> 1.0)
   - FontAwesome+iOS (0.1.4)
+  - MBProgressHUD (0.9.1)
   - MSDynamicsDrawerViewController (1.5.1)
   - Parse (1.6.5):
     - Bolts (~> 1.1)
@@ -18,6 +19,7 @@ PODS:
     - FontAwesome+iOS
 
 DEPENDENCIES:
+  - MBProgressHUD
   - MSDynamicsDrawerViewController
   - Parse
   - ParseCrashReporting
@@ -29,6 +31,7 @@ SPEC CHECKSUMS:
   Bolts: dd9fb8433d67f5acc3b6b4d1379bbc5513d716c1
   Facebook-iOS-SDK: 89dae50e975ebab95a01b0962d27277fc9cf08fd
   FontAwesome+iOS: 816c20304edef4ca92835de669577005cbaaf261
+  MBProgressHUD: f3747dcbd45a9e855a6b0674550651e0b7ed250c
   MSDynamicsDrawerViewController: 0002059480a4b5ddde7eafbafb958a79a9b0ffaf
   Parse: a21db4037d70a68a4ec64ecc0f327ed475cc14f8
   ParseCrashReporting: bc2418de3e198d032e8263c68fa2b98d6bcd964e

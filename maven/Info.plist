@@ -20,6 +20,10 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>989113651106264</string>
+	<key>FacebookDisplayName</key>
+	<string>Maven</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIAppFonts</key>
@@ -47,16 +51,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>FacebookAppID</key>
-	<string>429320090564309</string>
-	<key>URL types </key>
+	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>URL Schemes</key>
-			<string>fb429320090564309</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb989113651106264</string>
+			</array>
 		</dict>
 	</array>
-	<key>FacebookDisplayName</key>
-	<string>Maven_Dev</string>
 </dict>
 </plist>
